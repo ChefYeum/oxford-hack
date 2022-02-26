@@ -15,3 +15,8 @@
   border-radius: 4px;
 }
 
+.map-container{
+  width: 100vw;
+  height: 100vh;
+}
+
