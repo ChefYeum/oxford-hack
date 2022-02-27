@@ -147,7 +147,7 @@ export default function App() {
   const [filter, setFilter] = React.useState(null);
 
   const [showPopup, setShowPopup] = React.useState(true);
-  const contractAddress = "0x5fbdb2315678afecb367f032d93f642f64180aa3";
+  const contractAddress = "0x533Ba064Bf93745f0de41711340eaF335448Cf7d";
   const abi = contract.abi;
 
   const [currentAccount, setCurrentAccount] = useState(null);
@@ -192,7 +192,6 @@ export default function App() {
 
   const donationButtonHandler = async () => {
     const { ethereum } = window;
-    const connection = new ethers.providers.JsonRpcProvider();
     ethereum
       .request({
         method: "eth_sendTransaction",
@@ -200,9 +199,7 @@ export default function App() {
           {
             from: currentAccount,
             to: contractAddress,
-            value: ethers.utils.hexlify(100000),
-            gasPrice: ethers.utils.hexlify(100000),
-            gas: ethers.utils.hexlify(100000),
+            value: ethers.utils.parseEther("1").toHexString(),
           },
         ],
       })
@@ -216,14 +213,12 @@ export default function App() {
     // console.log(wallet);
     // const signer = wallet.connect(connection);
     // const tx = {
-    //   from: currentAccount.address,
+    //   from: currentAccount,
     //   to: contractAddress,
-    //   value: ethers.utils.parseUnits("0.01", "ethers"),
-    //   gasPrice: gasPrice,
-    //   gasLimit: ethers.utils.hexlify(100000),
-    //   nonce: connection.getTransactionCount(currentAccount.address, "latest"),
+    //   value: ethers.utils.parseEther("1").toHexString(),
     // };
-    // const transaction = await signer.sendTransaction(tx);
+    // console.log(tx);
+    // const transaction = await provider.send("eth_sendTransaction", tx);
     // console.log(transaction);
   };
 
@@ -244,7 +239,9 @@ export default function App() {
   const ethUSDRate = 2850.25;
 
   const getBalance = async () => {
-    const provider = new ethers.providers.JsonRpcProvider();
+    const provider = new ethers.providers.JsonRpcProvider(
+      "https://rpc-mumbai.maticvigil.com"
+    );
     const payableContract = new ethers.Contract(contractAddress, abi, provider);
     console.log("Calling contract");
     const data = await payableContract.getBalance();
