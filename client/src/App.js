@@ -30,20 +30,19 @@ const VIDEO_CLIPS = [{
 ];
 
 
-const VideoPreview = ({lat, lon}) => {
+const VideoPreview = ({lat, lon, video_url}) => {
 
-  return <Popup longitude={lon} latitude={lat}
-    className='p-6 bg-red-500'
-    anchor="bottom">
-      .
-  </Popup>
+  return <Marker longitude={lon} latitude={lat}
+    anchor="center">
+      <video className="rounded-full w-24 h-24 object-cover bg-white p-1" src={video_url} autoPlay={true} muted={true}/>
+  </Marker>
 
 };
 
 const VideoClipPopup = ({ setShowPopUp, sourceUrl }) => (
   <>
     <Popup longitude={UA_COORDINATES.longitude} latitude={UA_COORDINATES.latitude}
-      className={'p-6'}
+      style={{ background: '#f00' }}
       anchor="bottom"
       onClose={() => setShowPopUp(false)}>
       <ReactPlayer url={sourceUrl}
@@ -92,7 +91,7 @@ export default function App() {
           mapboxAccessToken={MAPBOX_TOKEN}
         >
           {/* <VideoClipPopup setShowPopUp={setShowPopup} sourceUrl={DUMMY_VIDEO_CLIP_URL} /> */}
-         { data_coords && data_coords.map(item => <VideoPreview key={item.id} lat={item.lat} lon={item.lon} />) }
+         { data_coords && data_coords.map(item => <VideoPreview key={item.id} lat={item.lat} lon={item.lon} video_url={item.url}/>) }
         </Map>
       </div>
     </>
