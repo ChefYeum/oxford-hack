@@ -28,6 +28,7 @@ export default function App() {
           anchor="bottom"
           onClose={() => setShowPopup(false)}>
           Video goes here
+          <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
         </Popup>
       </Map>
     </div>);
