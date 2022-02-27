@@ -9,7 +9,12 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1494867934522617861/pu/vid/720x1280/2N-DWaxGd5xuBBi4.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938040/uk-videos/1494867978365640704.jpg",
             "width": 720,
-            "height": 1280
+            "height": 1280,
+            "detection": {
+                "clock": 0.1,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938041/uk-videos/1493349378995666950.mp4",
@@ -20,7 +25,15 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1493349297647198209/pu/vid/720x1280/g1JdVO9HrM53uBp6.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938041/uk-videos/1493349378995666950.jpg",
             "width": 720,
-            "height": 1280
+            "height": 1280,
+            "detection": {
+                "vase": 0.30000000000000004,
+                "cake": 0.1,
+                "broccoli": 0.1,
+                "spoon": 0.1,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938042/uk-videos/1492118358673739776.mp4",
@@ -31,7 +44,19 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1492118298577801216/pu/vid/720x1280/9XpFb8E3LTEFWJ7I.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938042/uk-videos/1492118358673739776.jpg",
             "width": 720,
-            "height": 1280
+            "height": 1280,
+            "detection": {
+                "person": 0.7,
+                "train": 0.1,
+                "car": 0.2,
+                "truck": 0.1,
+                "toilet": 0.2,
+                "traffic light": 0.1,
+                "boat": 0.1,
+                "person_area": 0.004036421139192369,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938044/uk-videos/1491475585180311557.mp4",
@@ -42,7 +67,13 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1491475506054807562/pu/vid/720x1280/yaRobNEGBFHEfNoT.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938044/uk-videos/1491475585180311557.jpg",
             "width": 720,
-            "height": 1280
+            "height": 1280,
+            "detection": {
+                "person": 0.4,
+                "person_area": 0.0004616125297616236,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938047/uk-videos/1493162728256647168.mp4",
@@ -53,7 +84,16 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1493162688951762951/pu/vid/720x1280/o2r1QfkhFsLqoxOT.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938047/uk-videos/1493162728256647168.jpg",
             "width": 720,
-            "height": 1280
+            "height": 1280,
+            "detection": {
+                "person": 0.9999999999999999,
+                "skis": 0.1,
+                "snowboard": 0.30000000000000004,
+                "surfboard": 0.1,
+                "person_area": 0.009951070020906628,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938049/uk-videos/1493162675777544198.mp4",
@@ -64,7 +104,15 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1493162637684789248/pu/vid/320x568/f8vLKl4VBWVe88I7.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938049/uk-videos/1493162675777544198.jpg",
             "width": 320,
-            "height": 568
+            "height": 568,
+            "detection": {
+                "skis": 0.1,
+                "knife": 0.1,
+                "person": 0.4,
+                "person_area": 0.002320077423064504,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938049/uk-videos/1493162618726621194.mp4",
@@ -75,7 +123,13 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1493162585599918080/pu/vid/320x568/aUSOgqxaiRbSJLt4.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938049/uk-videos/1493162618726621194.jpg",
             "width": 320,
-            "height": 568
+            "height": 568,
+            "detection": {
+                "person": 0.1,
+                "person_area": 0.012405885383486748,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938053/uk-videos/1497611225735303176.mp4",
@@ -86,7 +140,17 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497611123553714176/pu/vid/480x270/51GeACkKb5XMVrGV.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938053/uk-videos/1497611225735303176.jpg",
             "width": 480,
-            "height": 270
+            "height": 270,
+            "detection": {
+                "person": 17.399999999999977,
+                "car": 0.1,
+                "boat": 0.1,
+                "suitcase": 0.1,
+                "backpack": 0.1,
+                "person_area": 0.00266011771157213,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938054/uk-videos/1497457987790819329.mp4",
@@ -97,7 +161,12 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497457876842991619/pu/vid/480x270/aO7R8kqBst5N__WW.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938054/uk-videos/1497457987790819329.jpg",
             "width": 480,
-            "height": 270
+            "height": 270,
+            "detection": {
+                "car": 0.4,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938054/uk-videos/1497457872401313793.mp4",
@@ -108,7 +177,18 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497457749428424708/pu/vid/1280x720/xg4VN87lYzHS_GHn.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938054/uk-videos/1497457872401313793.jpg",
             "width": 1280,
-            "height": 720
+            "height": 720,
+            "detection": {
+                "toothbrush": 0.1,
+                "truck": 0.1,
+                "car": 0.4,
+                "person": 0.7,
+                "tv": 0.2,
+                "motorcycle": 0.1,
+                "person_area": 0.02442523105336087,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938056/uk-videos/1497056064579194881.mp4",
@@ -119,7 +199,13 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497055991694770179/pu/vid/720x1280/MxpYpgJ0SZ0H7f4W.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938056/uk-videos/1497056064579194881.jpg",
             "width": 720,
-            "height": 1280
+            "height": 1280,
+            "detection": {
+                "person": 0.1,
+                "person_area": 0.02619374543428421,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938058/uk-videos/1496831798373875714.mp4",
@@ -130,7 +216,16 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1496831771752681475/pu/vid/320x352/eCTezN9DofzO3a4-.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938058/uk-videos/1496831798373875714.jpg",
             "width": 320,
-            "height": 352
+            "height": 352,
+            "detection": {
+                "chair": 0.1,
+                "car": 0.1,
+                "sports ball": 0.1,
+                "person": 0.1,
+                "person_area": 0.005934329703450203,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938058/uk-videos/1496720447198666752.mp4",
@@ -141,7 +236,11 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1496720422292889600/pu/vid/320x564/Zy5RRTITC8YOtXP2.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938058/uk-videos/1496720447198666752.jpg",
             "width": 320,
-            "height": 564
+            "height": 564,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938060/uk-videos/1487900385188659201.mp4",
@@ -152,7 +251,11 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1487900369908908034/pu/vid/480x480/nAG-Ci9Xla-UHkxu.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938060/uk-videos/1487900385188659201.jpg",
             "width": 480,
-            "height": 480
+            "height": 480,
+            "detection": {
+                "outside": 0.8268981635570526,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938062/uk-videos/1497380070515785730.mp4",
@@ -163,7 +266,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497379893948080137/pu/vid/1280x720/S7AikGPuuO6ONWpF.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938062/uk-videos/1497380070515785730.jpg",
             "width": 1280,
-            "height": 720
+            "height": 720,
+            "detection": {
+                "person": 4.000000000000002,
+                "car": 0.6,
+                "person_area": 0.028061923336645114,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938062/uk-videos/1497051701395828769.mp4",
@@ -174,7 +284,17 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497051477554212923/pu/vid/480x852/jOHR8YDstG12VzKx.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938062/uk-videos/1497051701395828769.jpg",
             "width": 480,
-            "height": 852
+            "height": 852,
+            "detection": {
+                "person": 4.300000000000001,
+                "handbag": 0.4,
+                "tv": 0.1,
+                "backpack": 0.4,
+                "cell phone": 0.1,
+                "person_area": 0.07754718144099379,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938063/uk-videos/1495221767761281025.mp4",
@@ -185,7 +305,21 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1495221695501774857/pu/vid/720x1280/nTcOszBJMLktwJA7.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938063/uk-videos/1495221767761281025.jpg",
             "width": 720,
-            "height": 1280
+            "height": 1280,
+            "detection": {
+                "person": 2.9000000000000012,
+                "cell phone": 0.5,
+                "bottle": 0.5,
+                "chair": 0.5,
+                "backpack": 0.2,
+                "umbrella": 0.1,
+                "handbag": 0.1,
+                "cup": 0.2,
+                "mouse": 0.1,
+                "person_area": 0.34975233237291187,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938066/uk-videos/1497634273012199430.mp4",
@@ -196,7 +330,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497634224953864197/pu/vid/720x720/Zpon81MN0D6wFSyk.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938066/uk-videos/1497634273012199430.jpg",
             "width": 720,
-            "height": 720
+            "height": 720,
+            "detection": {
+                "airplane": 1.4000000000000001,
+                "bird": 3.800000000000002,
+                "knife": 0.1,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938068/uk-videos/1497116236261515279.mp4",
@@ -207,7 +348,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497115729463848960/pu/vid/480x852/6halhduUvK9N3nPZ.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938068/uk-videos/1497116236261515279.jpg",
             "width": 480,
-            "height": 852
+            "height": 852,
+            "detection": {
+                "person": 0.2,
+                "car": 0.1,
+                "person_area": 0.6938550472259521,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938068/uk-videos/1495112011415498758.mp4",
@@ -218,7 +366,11 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1495111987663101952/pu/vid/480x600/DNcan2Q5mn3CZ4w0.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938068/uk-videos/1495112011415498758.jpg",
             "width": 480,
-            "height": 600
+            "height": 600,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938069/uk-videos/1494635259312410639.mp4",
@@ -229,7 +381,12 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1494635122640965632/pu/vid/478x270/ZQLEAO8nc1R9JOo-.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938069/uk-videos/1494635259312410639.jpg",
             "width": 478,
-            "height": 270
+            "height": 270,
+            "detection": {
+                "book": 0.1,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938070/uk-videos/1492461519459827718.mp4",
@@ -240,7 +397,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1492461485892808708/pu/vid/480x600/81U5_Fe_BYYYYIqM.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938070/uk-videos/1492461519459827718.jpg",
             "width": 480,
-            "height": 600
+            "height": 600,
+            "detection": {
+                "bed": 0.30000000000000004,
+                "person": 0.9999999999999999,
+                "person_area": 0.879806274175644,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938071/uk-videos/1492453675842818048.mp4",
@@ -251,7 +415,15 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1492453649355845632/pu/vid/540x540/G9hnjMGTl60XyXg5.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938071/uk-videos/1492453675842818048.jpg",
             "width": 540,
-            "height": 540
+            "height": 540,
+            "detection": {
+                "person": 3.600000000000002,
+                "cell phone": 0.2,
+                "tie": 0.1,
+                "person_area": 0.7243624826272325,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938072/uk-videos/1492079914241204227.mp4",
@@ -262,7 +434,15 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1492079873107664924/pu/vid/720x1280/KYGg-PkW7C2IPWOI.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938072/uk-videos/1492079914241204227.jpg",
             "width": 720,
-            "height": 1280
+            "height": 1280,
+            "detection": {
+                "person": 1.3,
+                "tie": 0.7999999999999999,
+                "cell phone": 0.4,
+                "person_area": 0.557415600006397,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938073/uk-videos/1492073391184125980.mp4",
@@ -273,7 +453,18 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1492073350855860224/pu/vid/540x540/HW0Ll6ljMwgK8LIB.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938073/uk-videos/1492073391184125980.jpg",
             "width": 540,
-            "height": 540
+            "height": 540,
+            "detection": {
+                "tv": 0.1,
+                "person": 1.8000000000000005,
+                "cell phone": 0.1,
+                "tie": 0.1,
+                "potted plant": 0.1,
+                "car": 0.1,
+                "person_area": 0.3458432256140642,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938074/uk-videos/1491412666598182915.mp4",
@@ -284,7 +475,13 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1491412568568700933/pu/vid/426x320/YN72VlnNTOUq6sL7.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938074/uk-videos/1491412666598182915.jpg",
             "width": 426,
-            "height": 320
+            "height": 320,
+            "detection": {
+                "person": 0.8999999999999999,
+                "person_area": 0.4729523046149148,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938075/uk-videos/1491136823707713539.mp4",
@@ -295,7 +492,15 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1491136785853960197/pu/vid/320x320/rkO2u6kc6Y2jDTZX.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938075/uk-videos/1491136823707713539.jpg",
             "width": 320,
-            "height": 320
+            "height": 320,
+            "detection": {
+                "person": 1.3,
+                "backpack": 0.1,
+                "dog": 0.1,
+                "person_area": 0.7650588842538687,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938076/uk-videos/1490393555365470210.mp4",
@@ -306,7 +511,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1490393401400901637/pu/vid/640x480/Fv_bYqclmoFMetTi.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938076/uk-videos/1490393555365470210.jpg",
             "width": 640,
-            "height": 480
+            "height": 480,
+            "detection": {
+                "carrot": 0.1,
+                "person": 0.7999999999999999,
+                "person_area": 0.33811507094651466,
+                "outside": 0.9,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938077/uk-videos/1489569765815472129.mp4",
@@ -317,7 +529,16 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1489569667777806339/pu/vid/480x852/X3jtcTs12Uiw7yaT.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938077/uk-videos/1489569765815472129.jpg",
             "width": 480,
-            "height": 852
+            "height": 852,
+            "detection": {
+                "person": 2.3000000000000007,
+                "sports ball": 0.1,
+                "cup": 0.1,
+                "cell phone": 0.2,
+                "person_area": 0.4834536345493371,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938078/uk-videos/1488478485106597891.mp4",
@@ -328,7 +549,15 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1488478416424869889/pu/vid/320x568/3e3RK7rVSNfVJXGi.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938078/uk-videos/1488478485106597891.jpg",
             "width": 320,
-            "height": 568
+            "height": 568,
+            "detection": {
+                "cup": 0.8999999999999999,
+                "person": 1.4000000000000001,
+                "donut": 0.1,
+                "person_area": 0.45255778889570913,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938079/uk-videos/1487808026811768836.mp4",
@@ -339,7 +568,15 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1487807977851699200/pu/vid/720x1280/ESacq8kPQV3qzfiu.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938079/uk-videos/1487808026811768836.jpg",
             "width": 720,
-            "height": 1280
+            "height": 1280,
+            "detection": {
+                "truck": 0.8999999999999999,
+                "traffic light": 0.30000000000000004,
+                "orange": 0.1,
+                "car": 0.1,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938080/uk-videos/1487384892677709825.mp4",
@@ -350,7 +587,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1487384872046022656/pu/vid/720x406/zAJYb4y82xkaEV82.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938080/uk-videos/1487384892677709825.jpg",
             "width": 720,
-            "height": 406
+            "height": 406,
+            "detection": {
+                "person": 1.6000000000000003,
+                "cell phone": 0.1,
+                "person_area": 0.5644127676496281,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938081/uk-videos/1487017530829029381.mp4",
@@ -361,7 +605,13 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1487017476621754372/pu/vid/480x852/o0LmjIOko7AURXfw.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938081/uk-videos/1487017530829029381.jpg",
             "width": 480,
-            "height": 852
+            "height": 852,
+            "detection": {
+                "person": 3.0000000000000013,
+                "person_area": 0.18780898459566128,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938082/uk-videos/1497484250060398594.mp4",
@@ -372,7 +622,16 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497483317029048320/pu/vid/320x568/tH8G6okQUeE6l4KR.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938082/uk-videos/1497484250060398594.jpg",
             "width": 320,
-            "height": 568
+            "height": 568,
+            "detection": {
+                "car": 3.600000000000002,
+                "truck": 0.1,
+                "person": 0.2,
+                "umbrella": 0.1,
+                "person_area": 0.0015330014866776764,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938082/uk-videos/1497725289924743172.mp4",
@@ -383,7 +642,12 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497725248409583619/pu/vid/320x568/9goKOchvHcCxSuaQ.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938082/uk-videos/1497725289924743172.jpg",
             "width": 320,
-            "height": 568
+            "height": 568,
+            "detection": {
+                "traffic light": 0.1,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938083/uk-videos/1497724187498237952.mp4",
@@ -394,7 +658,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497724118137020420/pu/vid/480x270/fBOjaco70QmO3RWP.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938083/uk-videos/1497724187498237952.jpg",
             "width": 480,
-            "height": 270
+            "height": 270,
+            "detection": {
+                "person": 3.2000000000000015,
+                "car": 0.1,
+                "person_area": 0.018428320705424987,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938084/uk-videos/1497723755220529152.mp4",
@@ -405,7 +676,11 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497723712124116995/pu/vid/1280x720/jBxC60irQ1i41Fux.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938084/uk-videos/1497723755220529152.jpg",
             "width": 1280,
-            "height": 720
+            "height": 720,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938085/uk-videos/1497723412730597384.mp4",
@@ -416,7 +691,11 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497723315397480448/pu/vid/480x848/KNd3xYlgcAH5RibE.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938085/uk-videos/1497723412730597384.jpg",
             "width": 480,
-            "height": 848
+            "height": 848,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938086/uk-videos/1497722707932323841.mp4",
@@ -427,7 +706,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497722664902877184/pu/vid/448x640/PNjOqMKQrKqgpR8M.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938086/uk-videos/1497722707932323841.jpg",
             "width": 448,
-            "height": 640
+            "height": 640,
+            "detection": {
+                "car": 1.0999999999999999,
+                "person": 0.5,
+                "person_area": 0.011276664212346077,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938088/uk-videos/1497720735975948288.mp4",
@@ -438,7 +724,17 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497720610381828098/pu/vid/720x1280/UWSyRWv6xADfDGcx.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938088/uk-videos/1497720735975948288.jpg",
             "width": 720,
-            "height": 1280
+            "height": 1280,
+            "detection": {
+                "person": 3.0000000000000013,
+                "skateboard": 0.1,
+                "boat": 0.30000000000000004,
+                "tv": 0.1,
+                "skis": 0.2,
+                "person_area": 0.009071798494551326,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938089/uk-videos/1497720414428184577.mp4",
@@ -449,7 +745,12 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497720235658555397/pu/vid/320x384/J1d4EkfQKKWytbny.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938089/uk-videos/1497720414428184577.jpg",
             "width": 320,
-            "height": 384
+            "height": 384,
+            "detection": {
+                "bird": 0.1,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938090/uk-videos/1497719556030308352.mp4",
@@ -460,7 +761,11 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497719528821772292/pu/vid/320x388/_h3342ShBYyecFpI.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938090/uk-videos/1497719556030308352.jpg",
             "width": 320,
-            "height": 388
+            "height": 388,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938090/uk-videos/1497718662547095556.mp4",
@@ -471,7 +776,12 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497718636684926976/pu/vid/320x358/BuG2H-16bMQHNSaq.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938090/uk-videos/1497718662547095556.jpg",
             "width": 320,
-            "height": 358
+            "height": 358,
+            "detection": {
+                "boat": 0.1,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938091/uk-videos/1497718237026525184.mp4",
@@ -482,7 +792,11 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497718192004911105/pu/vid/446x470/X4H3dZShpw8eJBxM.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938091/uk-videos/1497718237026525184.jpg",
             "width": 446,
-            "height": 470
+            "height": 470,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938092/uk-videos/1497716296250712077.mp4",
@@ -493,7 +807,16 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497716185395253250/pu/vid/480x668/OaqSbjtpObOtHsR4.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938092/uk-videos/1497716296250712077.jpg",
             "width": 480,
-            "height": 668
+            "height": 668,
+            "detection": {
+                "person": 0.4,
+                "motorcycle": 0.1,
+                "car": 0.1,
+                "bird": 0.1,
+                "person_area": 0.001082033893908374,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938093/uk-videos/1497714870149652481.mp4",
@@ -504,7 +827,16 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497714824553410574/pu/vid/320x584/y11ja0LClkaAOLCB.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938093/uk-videos/1497714870149652481.jpg",
             "width": 320,
-            "height": 584
+            "height": 584,
+            "detection": {
+                "truck": 0.6,
+                "person": 1.6000000000000003,
+                "car": 0.2,
+                "bird": 0.4,
+                "person_area": 0.0031630518242309327,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938094/uk-videos/1497713280365780995.mp4",
@@ -515,7 +847,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497713224623480835/pu/vid/608x848/X6wsh4ZQWOTyJyl6.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938094/uk-videos/1497713280365780995.jpg",
             "width": 608,
-            "height": 848
+            "height": 848,
+            "detection": {
+                "car": 0.2,
+                "airplane": 0.1,
+                "truck": 0.30000000000000004,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938095/uk-videos/1497711970677633027.mp4",
@@ -526,7 +865,11 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497711938415046662/pu/vid/320x568/nbN9vdOUP4hXnDRJ.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938095/uk-videos/1497711970677633027.jpg",
             "width": 320,
-            "height": 568
+            "height": 568,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938096/uk-videos/1497709969151610887.mp4",
@@ -537,7 +880,21 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497709899178037250/pu/vid/480x270/vL3FPcFGFsoGFRup.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938096/uk-videos/1497709969151610887.jpg",
             "width": 480,
-            "height": 270
+            "height": 270,
+            "detection": {
+                "boat": 0.1,
+                "book": 0.1,
+                "person": 1.0999999999999999,
+                "car": 0.1,
+                "tv": 0.2,
+                "refrigerator": 0.1,
+                "laptop": 0.1,
+                "chair": 0.30000000000000004,
+                "bottle": 0.5,
+                "person_area": 0.11592672123912386,
+                "outside": 0.9211283519864082,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938097/uk-videos/1497708774894747659.mp4",
@@ -548,7 +905,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497708717323784196/pu/vid/640x360/JvfY3yZHqLPPIo-j.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938097/uk-videos/1497708774894747659.jpg",
             "width": 640,
-            "height": 360
+            "height": 360,
+            "detection": {
+                "person": 0.9999999999999999,
+                "sports ball": 0.1,
+                "person_area": 0.007603976782411338,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938098/uk-videos/1497704805095067650.mp4",
@@ -559,7 +923,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497704719531360263/pu/vid/480x270/tfLyi2PittNV6oXe.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938098/uk-videos/1497704805095067650.jpg",
             "width": 480,
-            "height": 270
+            "height": 270,
+            "detection": {
+                "person": 0.30000000000000004,
+                "car": 0.5,
+                "person_area": 0.37178555255134893,
+                "outside": 0.9,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938098/uk-videos/1497695642445139972.mp4",
@@ -570,7 +941,13 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497695460856934401/pu/vid/352x640/id-9PaL9c8094--z.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938098/uk-videos/1497695642445139972.jpg",
             "width": 352,
-            "height": 640
+            "height": 640,
+            "detection": {
+                "person": 0.2,
+                "person_area": 0.8117536902427673,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938099/uk-videos/1497695392439410689.mp4",
@@ -581,7 +958,13 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497695330078535682/pu/vid/320x640/9P7VPKDexIOFAjyN.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938099/uk-videos/1497695392439410689.jpg",
             "width": 320,
-            "height": 640
+            "height": 640,
+            "detection": {
+                "person": 0.5,
+                "person_area": 0.14679081365466118,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938101/uk-videos/1497694227215667203.mp4",
@@ -592,7 +975,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497694165211168768/pu/vid/540x540/gUGrDynV1CPgN2zV.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938101/uk-videos/1497694227215667203.jpg",
             "width": 540,
-            "height": 540
+            "height": 540,
+            "detection": {
+                "traffic light": 0.5,
+                "person": 0.1,
+                "person_area": 0.007620310410857201,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938101/uk-videos/1497691574058299400.mp4",
@@ -603,7 +993,11 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497691505779261447/pu/vid/654x360/BH4hElfA13QGb6VC.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938101/uk-videos/1497691574058299400.jpg",
             "width": 654,
-            "height": 360
+            "height": 360,
+            "detection": {
+                "outside": 0.6,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938102/uk-videos/1497690773692821510.mp4",
@@ -614,7 +1008,16 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497690716469923843/pu/vid/636x360/t0K9mbA7TzqbnCvD.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938102/uk-videos/1497690773692821510.jpg",
             "width": 636,
-            "height": 360
+            "height": 360,
+            "detection": {
+                "book": 0.2,
+                "tv": 0.5,
+                "person": 0.30000000000000004,
+                "laptop": 0.1,
+                "person_area": 0.07707617982911566,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938103/uk-videos/1497687738774171653.mp4",
@@ -625,7 +1028,15 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497687604690669574/pu/vid/480x600/qs8ceWAY8RTeA2Hx.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938103/uk-videos/1497687738774171653.jpg",
             "width": 480,
-            "height": 600
+            "height": 600,
+            "detection": {
+                "bird": 0.2,
+                "person": 0.2,
+                "backpack": 0.1,
+                "person_area": 0.0119742751121521,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938105/uk-videos/1497685436952686601.mp4",
@@ -636,7 +1047,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497685243683352583/pu/vid/352x640/khBUUTPX2IqnKVGk.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938105/uk-videos/1497685436952686601.jpg",
             "width": 352,
-            "height": 640
+            "height": 640,
+            "detection": {
+                "cup": 0.1,
+                "donut": 0.2,
+                "cake": 0.1,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938107/uk-videos/1497684838681305108.mp4",
@@ -647,7 +1065,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497684791667351558/pu/vid/320x584/lAX4gDqf4SkmyiCU.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938107/uk-videos/1497684838681305108.jpg",
             "width": 320,
-            "height": 584
+            "height": 584,
+            "detection": {
+                "person": 2.800000000000001,
+                "sports ball": 0.2,
+                "person_area": 0.09377986648386075,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938108/uk-videos/1497683269181128707.mp4",
@@ -658,7 +1083,16 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497683171684593664/pu/vid/480x852/wyA-9Pf37xZGyvQM.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938108/uk-videos/1497683269181128707.jpg",
             "width": 480,
-            "height": 852
+            "height": 852,
+            "detection": {
+                "car": 1.2,
+                "person": 3.3000000000000016,
+                "bottle": 0.30000000000000004,
+                "donut": 0.1,
+                "person_area": 0.01727935706025384,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938108/uk-videos/1497681261535522816.mp4",
@@ -669,7 +1103,16 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497681218510331907/pu/vid/480x852/_fgmRttu6NWZfkwh.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938108/uk-videos/1497681261535522816.jpg",
             "width": 480,
-            "height": 852
+            "height": 852,
+            "detection": {
+                "car": 1.2,
+                "person": 0.7,
+                "truck": 0.1,
+                "tv": 0.1,
+                "person_area": 0.012574219344449895,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938109/uk-videos/1497680188167106565.mp4",
@@ -680,7 +1123,12 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497680090607636486/pu/vid/720x1280/CPitSwn8WCV2xmIU.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938109/uk-videos/1497680188167106565.jpg",
             "width": 720,
-            "height": 1280
+            "height": 1280,
+            "detection": {
+                "car": 0.6,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938110/uk-videos/1497679038604849155.mp4",
@@ -691,7 +1139,16 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497678995034456068/pu/vid/640x360/To5VxOqFVFz_bJNR.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938110/uk-videos/1497679038604849155.jpg",
             "width": 640,
-            "height": 360
+            "height": 360,
+            "detection": {
+                "car": 0.4,
+                "person": 0.7,
+                "microwave": 0.2,
+                "truck": 0.2,
+                "person_area": 0.012925841280126147,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938111/uk-videos/1497673896002260994.mp4",
@@ -702,7 +1159,16 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497673358237962250/pu/vid/480x270/_d37FO8jRTr53EbY.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938111/uk-videos/1497673896002260994.jpg",
             "width": 480,
-            "height": 270
+            "height": 270,
+            "detection": {
+                "person": 1.5000000000000002,
+                "car": 3.1000000000000014,
+                "umbrella": 0.1,
+                "traffic light": 0.1,
+                "person_area": 0.16681221817464875,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938112/uk-videos/1497671120778145799.mp4",
@@ -713,7 +1179,13 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497651160332877831/pu/vid/320x434/GM5giB8XrEVWDZ6S.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938112/uk-videos/1497671120778145799.jpg",
             "width": 320,
-            "height": 434
+            "height": 434,
+            "detection": {
+                "person": 1.3,
+                "person_area": 0.2645649245152107,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938113/uk-videos/1497670652026933257.mp4",
@@ -724,7 +1196,20 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497670596712407051/pu/vid/720x1280/5Riv63_UCekR_-8y.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938113/uk-videos/1497670652026933257.jpg",
             "width": 720,
-            "height": 1280
+            "height": 1280,
+            "detection": {
+                "person": 1.2,
+                "tv": 0.6,
+                "tie": 0.1,
+                "cup": 0.30000000000000004,
+                "bottle": 0.1,
+                "clock": 0.1,
+                "sports ball": 0.1,
+                "parking meter": 0.1,
+                "person_area": 0.2508297550181548,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938114/uk-videos/1497669861845123080.mp4",
@@ -735,7 +1220,15 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497669832648630274/pu/vid/320x584/WUDnVGNFe-eq0nwc.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938114/uk-videos/1497669861845123080.jpg",
             "width": 320,
-            "height": 584
+            "height": 584,
+            "detection": {
+                "car": 0.2,
+                "person": 2.3000000000000007,
+                "bottle": 0.30000000000000004,
+                "person_area": 0.01734201555423762,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938115/uk-videos/1497669346025426951.mp4",
@@ -746,7 +1239,17 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497669120791400449/pu/vid/640x288/sqeCj2iRn4R-Sqb-.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938115/uk-videos/1497669346025426951.jpg",
             "width": 640,
-            "height": 288
+            "height": 288,
+            "detection": {
+                "person": 1.2,
+                "car": 2.1000000000000005,
+                "truck": 0.7999999999999999,
+                "tv": 0.7,
+                "bus": 0.1,
+                "person_area": 0.22291802490750948,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938117/uk-videos/1497669073374785546.mp4",
@@ -757,7 +1260,11 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497669013735985155/pu/vid/720x1280/jj60W2Yf38q5qcEW.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938117/uk-videos/1497669073374785546.jpg",
             "width": 720,
-            "height": 1280
+            "height": 1280,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938118/uk-videos/1497668417263910916.mp4",
@@ -768,7 +1275,15 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497668364671541250/pu/vid/640x352/bxXCd6ncEN6XpGw9.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938118/uk-videos/1497668417263910916.jpg",
             "width": 640,
-            "height": 352
+            "height": 352,
+            "detection": {
+                "handbag": 0.1,
+                "person": 1.0999999999999999,
+                "car": 0.2,
+                "person_area": 0.06407234711911192,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938119/uk-videos/1497666801379033091.mp4",
@@ -779,7 +1294,12 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497666765056262146/pu/vid/720x1280/Yg2WbVblf8OxpC7R.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938119/uk-videos/1497666801379033091.jpg",
             "width": 720,
-            "height": 1280
+            "height": 1280,
+            "detection": {
+                "bird": 0.2,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938120/uk-videos/1497665020381048836.mp4",
@@ -790,7 +1310,15 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497664824515383296/pu/vid/480x270/b3okQO1kfnn4_jjp.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938120/uk-videos/1497665020381048836.jpg",
             "width": 480,
-            "height": 270
+            "height": 270,
+            "detection": {
+                "person": 3.700000000000002,
+                "horse": 0.30000000000000004,
+                "umbrella": 0.1,
+                "person_area": 0.039941187123642155,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938121/uk-videos/1497664719724892164.mp4",
@@ -801,7 +1329,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497664680596287490/pu/vid/352x640/bcPMQRFPSc0jV-SO.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938121/uk-videos/1497664719724892164.jpg",
             "width": 352,
-            "height": 640
+            "height": 640,
+            "detection": {
+                "person": 0.5,
+                "bear": 0.1,
+                "person_area": 0.5845595523715019,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938122/uk-videos/1497663665981607941.mp4",
@@ -812,7 +1347,18 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497663591247400961/pu/vid/320x516/Zufwa5U-1HLO2Jzr.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938122/uk-videos/1497663665981607941.jpg",
             "width": 320,
-            "height": 516
+            "height": 516,
+            "detection": {
+                "donut": 0.1,
+                "car": 0.7,
+                "truck": 0.2,
+                "person": 0.5,
+                "traffic light": 0.1,
+                "umbrella": 0.1,
+                "person_area": 0.05644644610583782,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938164/uk-videos/1487828169377955843.mp4",
@@ -823,7 +1369,15 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1487828048527470599/pu/vid/480x270/57bOjsQvAXa8L3kC.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938164/uk-videos/1487828169377955843.jpg",
             "width": 480,
-            "height": 270
+            "height": 270,
+            "detection": {
+                "person": 5.4999999999999964,
+                "bench": 0.30000000000000004,
+                "car": 0.2,
+                "person_area": 0.032102764389393024,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938165/uk-videos/1497464904566992900.mp4",
@@ -834,7 +1388,12 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497464713625550849/pu/vid/720x720/IkbJKVPuQFtxbh6U.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938165/uk-videos/1497464904566992900.jpg",
             "width": 720,
-            "height": 720
+            "height": 720,
+            "detection": {
+                "bird": 0.2,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938166/uk-videos/1497437535970095108.mp4",
@@ -845,7 +1404,13 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497437297658118145/pu/vid/552x270/zPrAVHKKY3b2Bn7P.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938166/uk-videos/1497437535970095108.jpg",
             "width": 552,
-            "height": 270
+            "height": 270,
+            "detection": {
+                "cup": 0.2,
+                "tv": 0.1,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938167/uk-videos/1497402077324087299.mp4",
@@ -856,7 +1421,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497401926316531713/pu/vid/320x320/JtGn6pczDIervkXR.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938167/uk-videos/1497402077324087299.jpg",
             "width": 320,
-            "height": 320
+            "height": 320,
+            "detection": {
+                "kite": 0.1,
+                "bird": 0.2,
+                "car": 0.1,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938168/uk-videos/1497110770617925648.mp4",
@@ -867,7 +1439,17 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497110418745180165/pu/vid/320x568/ib291wkad8N2o8ZB.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938168/uk-videos/1497110770617925648.jpg",
             "width": 320,
-            "height": 568
+            "height": 568,
+            "detection": {
+                "person": 1.0999999999999999,
+                "potted plant": 0.4,
+                "tie": 0.8999999999999999,
+                "tv": 0.8999999999999999,
+                "laptop": 0.1,
+                "person_area": 0.22440514848990878,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938169/uk-videos/1487769788696956935.mp4",
@@ -878,7 +1460,19 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1487769685944938499/pu/vid/480x852/vOVyEMLW8Ho0Xsyv.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938169/uk-videos/1487769788696956935.jpg",
             "width": 480,
-            "height": 852
+            "height": 852,
+            "detection": {
+                "vase": 0.30000000000000004,
+                "bowl": 0.7999999999999999,
+                "cup": 2.1000000000000005,
+                "bottle": 0.5,
+                "person": 1.4000000000000001,
+                "wine glass": 0.4,
+                "chair": 0.1,
+                "person_area": 0.19062996575874938,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938170/uk-videos/1497289935031881728.mp4",
@@ -889,7 +1483,15 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497289877939015691/pu/vid/320x568/e4xh95L6o5QKVZfy.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938170/uk-videos/1497289935031881728.jpg",
             "width": 320,
-            "height": 568
+            "height": 568,
+            "detection": {
+                "person": 2.0000000000000004,
+                "snowboard": 0.1,
+                "dog": 0.2,
+                "person_area": 0.2536968517117202,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938172/uk-videos/1497642013788934145.mp4",
@@ -900,7 +1502,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497641963344076802/pu/vid/480x1002/cV9-5KUqXen9ARL8.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938172/uk-videos/1497642013788934145.jpg",
             "width": 480,
-            "height": 1002
+            "height": 1002,
+            "detection": {
+                "person": 2.1000000000000005,
+                "tie": 0.1,
+                "person_area": 0.878931933925265,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938173/uk-videos/1497627038861172740.mp4",
@@ -911,7 +1520,11 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497626969709727745/pu/vid/320x566/Qmpx3Ni8BJ2t3e6w.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938173/uk-videos/1497627038861172740.jpg",
             "width": 320,
-            "height": 566
+            "height": 566,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938174/uk-videos/1497549500080168970.mp4",
@@ -922,7 +1535,16 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497549308496957454/pu/vid/848x464/NbZhREsmXpLhLRQy.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938174/uk-videos/1497549500080168970.jpg",
             "width": 848,
-            "height": 464
+            "height": 464,
+            "detection": {
+                "person": 8.599999999999985,
+                "tie": 0.5,
+                "bottle": 0.1,
+                "sports ball": 0.1,
+                "person_area": 0.0977983329076928,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938176/uk-videos/1497688095323561989.mp4",
@@ -933,7 +1555,15 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497687987102101506/pu/vid/320x568/MWvZT6DAlZyuzs7t.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938176/uk-videos/1497688095323561989.jpg",
             "width": 320,
-            "height": 568
+            "height": 568,
+            "detection": {
+                "person": 2.3000000000000007,
+                "skateboard": 0.1,
+                "bowl": 0.1,
+                "person_area": 0.3450908872258403,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938177/uk-videos/1497630473610268676.mp4",
@@ -944,7 +1574,15 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497630382287728640/pu/vid/320x568/oEN3bLL5tUPEZvEN.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938177/uk-videos/1497630473610268676.jpg",
             "width": 320,
-            "height": 568
+            "height": 568,
+            "detection": {
+                "person": 2.800000000000001,
+                "car": 0.6,
+                "suitcase": 0.1,
+                "person_area": 0.605028202906916,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938178/uk-videos/1497544659756744709.mp4",
@@ -955,7 +1593,17 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497544584276156418/pu/vid/480x852/-4uHLJ3YgSWmZCJq.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938178/uk-videos/1497544659756744709.jpg",
             "width": 480,
-            "height": 852
+            "height": 852,
+            "detection": {
+                "car": 6.5999999999999925,
+                "parking meter": 0.1,
+                "person": 0.5,
+                "bench": 0.8999999999999999,
+                "fire hydrant": 0.30000000000000004,
+                "person_area": 0.0005899853014852852,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938179/uk-videos/1497511345889161216.mp4",
@@ -966,7 +1614,13 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497511301165338624/pu/vid/320x568/fCJRMCjotlzHp_zE.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938179/uk-videos/1497511345889161216.jpg",
             "width": 320,
-            "height": 568
+            "height": 568,
+            "detection": {
+                "car": 2.0000000000000004,
+                "traffic light": 0.1,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938179/uk-videos/1497358299863425038.mp4",
@@ -977,7 +1631,13 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497358254120353793/pu/vid/366x270/3iQgPKtpYR7hJWLv.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938179/uk-videos/1497358299863425038.jpg",
             "width": 366,
-            "height": 270
+            "height": 270,
+            "detection": {
+                "traffic light": 1.2,
+                "airplane": 0.1,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938180/uk-videos/1497255581933084672.mp4",
@@ -988,7 +1648,13 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497255392098885636/pu/vid/640x360/lTFgifRM7mROPX1f.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938180/uk-videos/1497255581933084672.jpg",
             "width": 640,
-            "height": 360
+            "height": 360,
+            "detection": {
+                "person": 0.9999999999999999,
+                "person_area": 0.6450526416301728,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938181/uk-videos/1497255149269659652.mp4",
@@ -999,7 +1665,11 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497255138972643328/pu/vid/360x640/alWuajs2Q8sO3VGV.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938181/uk-videos/1497255149269659652.jpg",
             "width": 360,
-            "height": 640
+            "height": 640,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938182/uk-videos/1497237670967263232.mp4",
@@ -1010,7 +1680,13 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497237495876132884/pu/vid/320x568/LxNYVRdzEAg-Mldv.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938182/uk-videos/1497237670967263232.jpg",
             "width": 320,
-            "height": 568
+            "height": 568,
+            "detection": {
+                "person": 2.800000000000001,
+                "person_area": 0.7844389756210145,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938183/uk-videos/1497199661219729411.mp4",
@@ -1021,7 +1697,16 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497199558950072327/pu/vid/480x852/MonvjYBDI-ScUjDA.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938183/uk-videos/1497199661219729411.jpg",
             "width": 480,
-            "height": 852
+            "height": 852,
+            "detection": {
+                "person": 3.900000000000002,
+                "bird": 0.1,
+                "teddy bear": 0.1,
+                "backpack": 0.2,
+                "person_area": 0.05121434808302763,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938184/uk-videos/1497165751345688643.mp4",
@@ -1032,7 +1717,17 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497165675491700778/pu/vid/1280x720/yU_tgf2ByC-ORKRQ.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938184/uk-videos/1497165751345688643.jpg",
             "width": 1280,
-            "height": 720
+            "height": 720,
+            "detection": {
+                "person": 3.4000000000000017,
+                "boat": 0.1,
+                "suitcase": 0.30000000000000004,
+                "handbag": 0.30000000000000004,
+                "horse": 0.1,
+                "person_area": 0.050984248375136605,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938186/uk-videos/1497159684758900737.mp4",
@@ -1043,7 +1738,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497158836775497752/pu/vid/480x986/b_iEcJXGcL_MASzZ.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938186/uk-videos/1497159684758900737.jpg",
             "width": 480,
-            "height": 986
+            "height": 986,
+            "detection": {
+                "backpack": 0.1,
+                "keyboard": 0.1,
+                "tv": 0.1,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938187/uk-videos/1497152299776589827.mp4",
@@ -1054,7 +1756,12 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497152242654273537/pu/vid/480x852/xUW8sbycEKeafZqO.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938187/uk-videos/1497152299776589827.jpg",
             "width": 480,
-            "height": 852
+            "height": 852,
+            "detection": {
+                "refrigerator": 0.5,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938188/uk-videos/1497148375447347202.mp4",
@@ -1065,7 +1772,12 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497148354932969473/pu/vid/476x270/3ywjwoVC1bIhe40y.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938188/uk-videos/1497148375447347202.jpg",
             "width": 476,
-            "height": 270
+            "height": 270,
+            "detection": {
+                "stop sign": 0.2,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938188/uk-videos/1497147086365732878.mp4",
@@ -1076,7 +1788,16 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497147032611532800/pu/vid/320x568/F1tLI3G0XxIxatfl.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938188/uk-videos/1497147086365732878.jpg",
             "width": 320,
-            "height": 568
+            "height": 568,
+            "detection": {
+                "bus": 0.1,
+                "car": 0.7,
+                "person": 0.6,
+                "bird": 0.1,
+                "person_area": 0.0017511265371770908,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938189/uk-videos/1497141478572781569.mp4",
@@ -1087,7 +1808,13 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497141404945944578/pu/vid/320x568/cGDfFoUoKWtR84TY.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938189/uk-videos/1497141478572781569.jpg",
             "width": 320,
-            "height": 568
+            "height": 568,
+            "detection": {
+                "bottle": 0.1,
+                "tv": 0.2,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938190/uk-videos/1497139046182625286.mp4",
@@ -1098,7 +1825,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497138987798048782/pu/vid/1280x720/A4P_mBOxDz1Uka9h.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938190/uk-videos/1497139046182625286.jpg",
             "width": 1280,
-            "height": 720
+            "height": 720,
+            "detection": {
+                "person": 0.1,
+                "cat": 0.2,
+                "person_area": 0.19711469113826752,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938191/uk-videos/1497135876962353154.mp4",
@@ -1109,7 +1843,15 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497135818070188071/pu/vid/480x852/YVJSTp_JGHhinu4P.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938191/uk-videos/1497135876962353154.jpg",
             "width": 480,
-            "height": 852
+            "height": 852,
+            "detection": {
+                "person": 7.099999999999991,
+                "bottle": 0.1,
+                "cell phone": 0.2,
+                "person_area": 0.10291571922528137,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938192/uk-videos/1497042635847974912.mp4",
@@ -1120,7 +1862,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1497042528083849216/pu/vid/720x1280/khSVxIii8f6-fpJ-.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938192/uk-videos/1497042635847974912.jpg",
             "width": 720,
-            "height": 1280
+            "height": 1280,
+            "detection": {
+                "person": 0.8999999999999999,
+                "dog": 0.1,
+                "person_area": 0.7879319356547462,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938193/uk-videos/1496939759981285394.mp4",
@@ -1131,7 +1880,12 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1496939717195091981/pu/vid/480x852/7D2tPFtOk2r7Lmwr.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938193/uk-videos/1496939759981285394.jpg",
             "width": 480,
-            "height": 852
+            "height": 852,
+            "detection": {
+                "bird": 0.1,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938194/uk-videos/1496926682531381254.mp4",
@@ -1142,7 +1896,11 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1496926642136039428/pu/vid/320x568/mvzc6DgJ-0nINA0U.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938194/uk-videos/1496926682531381254.jpg",
             "width": 320,
-            "height": 568
+            "height": 568,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938199/uk-videos/1496861794790514693.mp4",
@@ -1153,7 +1911,21 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1496861619380445185/pu/vid/720x1280/3DH-ckihwiZpckz1.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938199/uk-videos/1496861794790514693.jpg",
             "width": 720,
-            "height": 1280
+            "height": 1280,
+            "detection": {
+                "dog": 0.4,
+                "person": 3.1000000000000014,
+                "car": 0.7999999999999999,
+                "bench": 0.4,
+                "truck": 0.1,
+                "sports ball": 0.2,
+                "horse": 0.1,
+                "backpack": 0.1,
+                "cell phone": 0.1,
+                "person_area": 0.26506324760961303,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938200/uk-videos/1496840847593254912.mp4",
@@ -1164,7 +1936,18 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1496840765443559520/pu/vid/480x270/8lPzfSkx3-GZFjC9.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938200/uk-videos/1496840847593254912.jpg",
             "width": 480,
-            "height": 270
+            "height": 270,
+            "detection": {
+                "person": 11.999999999999973,
+                "handbag": 0.8999999999999999,
+                "horse": 0.2,
+                "backpack": 0.8999999999999999,
+                "bicycle": 0.2,
+                "baseball glove": 0.1,
+                "person_area": 0.03001568578329177,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938201/uk-videos/1496690726956064774.mp4",
@@ -1175,7 +1958,11 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1496690671012438016/pu/vid/320x568/2EKMGSgNQGiU3KN3.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938201/uk-videos/1496690726956064774.jpg",
             "width": 320,
-            "height": 568
+            "height": 568,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938202/uk-videos/1493855082793865222.mp4",
@@ -1186,7 +1973,17 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1493855020424511489/pu/vid/640x360/Sh8Tc3OX4VMIpjIf.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938202/uk-videos/1493855082793865222.jpg",
             "width": 640,
-            "height": 360
+            "height": 360,
+            "detection": {
+                "person": 7.799999999999988,
+                "cup": 0.1,
+                "wine glass": 0.1,
+                "tie": 0.2,
+                "elephant": 0.2,
+                "person_area": 0.08317927240083627,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938202/uk-videos/1493270784059576323.mp4",
@@ -1197,7 +1994,13 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1493270691097063426/pu/vid/320x584/-FJlbwYOwE5MuWEh.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938202/uk-videos/1493270784059576323.jpg",
             "width": 320,
-            "height": 584
+            "height": 584,
+            "detection": {
+                "person": 3.1000000000000014,
+                "person_area": 0.23725234545324167,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938203/uk-videos/1492718201184178176.mp4",
@@ -1208,7 +2011,16 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1492718142883311624/pu/vid/490x270/c0FfmDXQZSb1beQt.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938203/uk-videos/1492718201184178176.jpg",
             "width": 490,
-            "height": 270
+            "height": 270,
+            "detection": {
+                "person": 3.2000000000000015,
+                "sports ball": 0.6,
+                "car": 0.1,
+                "horse": 0.1,
+                "person_area": 0.11638145849428833,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938204/uk-videos/1489742980864954375.mp4",
@@ -1219,7 +2031,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1489742929086365697/pu/vid/480x852/xM4RMLTtFlB8Jkeg.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938204/uk-videos/1489742980864954375.jpg",
             "width": 480,
-            "height": 852
+            "height": 852,
+            "detection": {
+                "cake": 0.4,
+                "person": 0.5,
+                "person_area": 0.14584534093737603,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938205/uk-videos/1493713972167643142.mp4",
@@ -1230,7 +2049,16 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1493713945361895426/pu/vid/640x360/UjhlJeNd1m_USFkt.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938205/uk-videos/1493713972167643142.jpg",
             "width": 640,
-            "height": 360
+            "height": 360,
+            "detection": {
+                "truck": 0.30000000000000004,
+                "person": 0.5,
+                "horse": 0.1,
+                "boat": 0.1,
+                "person_area": 0.028588951425626875,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938206/uk-videos/1492999282231857153.mp4",
@@ -1241,7 +2069,14 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1492999065394683904/pu/vid/1280x720/tKZVh40XYAJxqlXH.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938206/uk-videos/1492999282231857153.jpg",
             "width": 1280,
-            "height": 720
+            "height": 720,
+            "detection": {
+                "kite": 0.1,
+                "person": 0.1,
+                "person_area": 0.07333264499902725,
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938207/uk-videos/1494328447300038673.mp4",
@@ -1252,7 +2087,11 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1494328232199405586/pu/vid/480x852/WkdDSg9-YnNlGXMF.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938207/uk-videos/1494328447300038673.jpg",
             "width": 480,
-            "height": 852
+            "height": 852,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938208/uk-videos/1494239762319826946.mp4",
@@ -1263,7 +2102,11 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1494239573215490048/pu/vid/320x568/79mWnDYO-RYrBf0S.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938208/uk-videos/1494239762319826946.jpg",
             "width": 320,
-            "height": 568
+            "height": 568,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938209/uk-videos/1494225334455181314.mp4",
@@ -1274,7 +2117,11 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1494225097854435328/pu/vid/320x568/S-ZTe7a2mTMFZ_Rc.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938209/uk-videos/1494225334455181314.jpg",
             "width": 320,
-            "height": 568
+            "height": 568,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938210/uk-videos/1494215382088962048.mp4",
@@ -1285,7 +2132,11 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1494215203269099524/pu/vid/480x852/T45bgUhpEFB4JRRK.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938210/uk-videos/1494215382088962048.jpg",
             "width": 480,
-            "height": 852
+            "height": 852,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938211/uk-videos/1496967062354378761.mp4",
@@ -1296,7 +2147,11 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1496966962034970632/pu/vid/478x848/w9XHQrv_zg6oxg9r.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938211/uk-videos/1496967062354378761.jpg",
             "width": 478,
-            "height": 848
+            "height": 848,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
         },
         {
             "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938215/uk-videos/1496597647108583431.mp4",
@@ -1307,7 +2162,510 @@
             "twitter_url": "https://video.twimg.com/ext_tw_video/1496597500085653521/pu/vid/480x270/E_ZNTQcs2dm3erZY.mp4?tag=12",
             "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645938215/uk-videos/1496597647108583431.jpg",
             "width": 480,
-            "height": 270
+            "height": 270,
+            "detection": {
+                "person": 0.2,
+                "fire hydrant": 0.1,
+                "person_area": 0.010653647594153881,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941752/uk-videos/1497633410302590990.mp4",
+            "lon": 30.523732,
+            "lat": 50.450277,
+            "created_at": 1645898604,
+            "id": 1497633410302590990,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1497633334637350916/pu/vid/640x360/N7fSdcQgUEAP7pvl.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941752/uk-videos/1497633410302590990.jpg",
+            "width": 640,
+            "height": 360,
+            "detection": {
+                "person": 0.1,
+                "traffic light": 0.7,
+                "person_area": 0.0013448891695588827,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941753/uk-videos/1497506238862696449.mp4",
+            "lon": 30.421968,
+            "lat": 50.449493,
+            "created_at": 1645868284,
+            "id": 1497506238862696449,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1497506184059887617/pu/vid/320x568/zz787MxEHtGX1Y9K.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941753/uk-videos/1497506238862696449.jpg",
+            "width": 320,
+            "height": 568,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941754/uk-videos/1497319246115876869.mp4",
+            "lon": 30.5233,
+            "lat": 50.45,
+            "created_at": 1645823701,
+            "id": 1497319246115876869,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1497318812168953872/pu/vid/480x852/Cn2EPSRtE7nAxdbB.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941754/uk-videos/1497319246115876869.jpg",
+            "width": 480,
+            "height": 852,
+            "detection": {
+                "traffic light": 0.7999999999999999,
+                "bench": 0.2,
+                "car": 0.2,
+                "truck": 0.1,
+                "airplane": 0.1,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941755/uk-videos/1497271890058039302.mp4",
+            "lon": 22.13572,
+            "lat": 44.386383,
+            "created_at": 1645812411,
+            "id": 1497271890058039302,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1497271849012629510/pu/vid/636x360/tBRUfemasEheUInT.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941755/uk-videos/1497271890058039302.jpg",
+            "width": 636,
+            "height": 360,
+            "detection": {
+                "person": 4.100000000000001,
+                "tie": 0.7,
+                "tv": 0.2,
+                "cell phone": 0.2,
+                "person_area": 0.28969294098546583,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941756/uk-videos/1497268268775706624.mp4",
+            "lon": 30.466311,
+            "lat": 50.450796,
+            "created_at": 1645811547,
+            "id": 1497268268775706624,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1497268174030573568/pu/vid/640x360/8xXCPi51o19w-0sX.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941756/uk-videos/1497268268775706624.jpg",
+            "width": 640,
+            "height": 360,
+            "detection": {
+                "person": 7.999999999999988,
+                "cell phone": 0.2,
+                "tv": 0.1,
+                "backpack": 0.1,
+                "suitcase": 0.5,
+                "handbag": 0.1,
+                "teddy bear": 0.1,
+                "person_area": 0.06874701877823111,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941757/uk-videos/1497139002582855681.mp4",
+            "lon": 30.497439,
+            "lat": 50.513095,
+            "created_at": 1645780728,
+            "id": 1497139002582855681,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1497138985105297408/pu/vid/320x564/rIB1rDNEgZCmaIax.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941757/uk-videos/1497139002582855681.jpg",
+            "width": 320,
+            "height": 564,
+            "detection": {
+                "car": 4.899999999999999,
+                "potted plant": 0.30000000000000004,
+                "vase": 0.1,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941758/uk-videos/1497135423159635970.mp4",
+            "lon": 30.633062,
+            "lat": 50.397621,
+            "created_at": 1645779874,
+            "id": 1497135423159635970,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1497135383422853155/pu/vid/480x914/_m6K72pIDCuuakqF.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941758/uk-videos/1497135423159635970.jpg",
+            "width": 480,
+            "height": 914,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941759/uk-videos/1496797356804964353.mp4",
+            "lon": 30.489185,
+            "lat": 50.440206,
+            "created_at": 1645699273,
+            "id": 1496797356804964353,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1496797273363206149/pu/vid/640x360/ipZcs-iCPqUrd64o.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941759/uk-videos/1496797356804964353.jpg",
+            "width": 640,
+            "height": 360,
+            "detection": {
+                "person": 7.499999999999989,
+                "tv": 0.1,
+                "bowl": 0.1,
+                "bus": 0.1,
+                "car": 0.2,
+                "person_area": 0.06804763015049209,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941760/uk-videos/1496790458642894853.mp4",
+            "lon": 30.489185,
+            "lat": 50.440206,
+            "created_at": 1645697629,
+            "id": 1496790458642894853,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1496790367156461574/pu/vid/1280x720/XFB5vQIXUhZ-Bqd9.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941760/uk-videos/1496790458642894853.jpg",
+            "width": 1280,
+            "height": 720,
+            "detection": {
+                "person": 20.50000000000002,
+                "backpack": 0.9999999999999999,
+                "car": 0.6,
+                "handbag": 1.9000000000000006,
+                "umbrella": 0.2,
+                "suitcase": 1.8000000000000005,
+                "horse": 0.4,
+                "clock": 0.30000000000000004,
+                "traffic light": 0.2,
+                "person_area": 0.015696219911247974,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941761/uk-videos/1496076466215440385.mp4",
+            "lon": 30.537003,
+            "lat": 50.447284,
+            "created_at": 1645527399,
+            "id": 1496076466215440385,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1496076382421626882/pu/vid/582x270/WJYfy85RJ1hoMXmB.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941761/uk-videos/1496076466215440385.jpg",
+            "width": 582,
+            "height": 270,
+            "detection": {
+                "person": 3.3000000000000016,
+                "tv": 0.8999999999999999,
+                "tie": 0.1,
+                "teddy bear": 0.1,
+                "person_area": 0.13085100562735033,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941762/uk-videos/1496043725319024640.mp4",
+            "lon": 30.523836,
+            "lat": 50.450434,
+            "created_at": 1645519593,
+            "id": 1496043725319024640,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1496043515830317059/pu/vid/640x360/epyEAu9QcSdV8WK6.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941762/uk-videos/1496043725319024640.jpg",
+            "width": 640,
+            "height": 360,
+            "detection": {
+                "person": 2.1000000000000005,
+                "tie": 2.0000000000000004,
+                "bench": 0.1,
+                "person_area": 0.4091567104748848,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941763/uk-videos/1495496717600493575.mp4",
+            "lon": 30.528683,
+            "lat": 50.447762,
+            "created_at": 1645389177,
+            "id": 1495496717600493575,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1495496663804395522/pu/vid/480x852/tnzTIEzshxbaMDX8.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941763/uk-videos/1495496717600493575.jpg",
+            "width": 480,
+            "height": 852,
+            "detection": {
+                "person": 4.799999999999999,
+                "handbag": 0.2,
+                "sports ball": 0.2,
+                "backpack": 0.1,
+                "traffic light": 0.1,
+                "person_area": 0.07356480476058401,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941764/uk-videos/1495479278951190534.mp4",
+            "lon": 30.523732,
+            "lat": 50.450277,
+            "created_at": 1645385019,
+            "id": 1495479278951190534,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1495475150782935048/pu/vid/480x270/1IrolZ_FJlBMS6Cl.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941764/uk-videos/1495479278951190534.jpg",
+            "width": 480,
+            "height": 270,
+            "detection": {
+                "person": 1.9000000000000006,
+                "car": 0.1,
+                "truck": 0.1,
+                "tie": 0.4,
+                "person_area": 0.21459779987650868,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941765/uk-videos/1495392685632462854.mp4",
+            "lon": 30.528774,
+            "lat": 50.448116,
+            "created_at": 1645364373,
+            "id": 1495392685632462854,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1495392443696615430/pu/vid/480x270/Es3dW54ii42mXkaQ.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941765/uk-videos/1495392685632462854.jpg",
+            "width": 480,
+            "height": 270,
+            "detection": {
+                "umbrella": 0.1,
+                "person": 2.1000000000000005,
+                "stop sign": 0.2,
+                "cell phone": 0.1,
+                "laptop": 0.1,
+                "person_area": 0.07192831192653447,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941766/uk-videos/1495142341279207424.mp4",
+            "lon": 30.520054,
+            "lat": 50.446028,
+            "created_at": 1645304687,
+            "id": 1495142341279207424,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1495142273784455173/pu/vid/720x1280/XhgUJh0Iz9w2H9Mv.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941766/uk-videos/1495142341279207424.jpg",
+            "width": 720,
+            "height": 1280,
+            "detection": {
+                "person": 5.699999999999996,
+                "person_area": 0.07134650969518387,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941767/uk-videos/1495009716312985604.mp4",
+            "lon": 30.530321,
+            "lat": 50.421429,
+            "created_at": 1645273066,
+            "id": 1495009716312985604,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1495009635157348353/pu/vid/720x1280/9plU4w9Y8yIl-Fv9.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941767/uk-videos/1495009716312985604.jpg",
+            "width": 720,
+            "height": 1280,
+            "detection": {
+                "person": 1.0999999999999999,
+                "umbrella": 0.1,
+                "tv": 0.1,
+                "book": 0.1,
+                "toothbrush": 0.1,
+                "person_area": 0.7415564439513468,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941768/uk-videos/1494034744929103873.mp4",
+            "lon": 30.529221,
+            "lat": 50.423378,
+            "created_at": 1645040615,
+            "id": 1494034744929103873,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1494034695079739392/pu/vid/320x320/6UQhIxS2tJ4uRNOb.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941768/uk-videos/1494034744929103873.jpg",
+            "width": 320,
+            "height": 320,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941769/uk-videos/1493900166159638530.mp4",
+            "lon": 30.521586,
+            "lat": 50.456698,
+            "created_at": 1645008529,
+            "id": 1493900166159638530,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1493900013298229249/pu/vid/640x360/WWxVNa7NiIMYdDdH.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941769/uk-videos/1493900166159638530.jpg",
+            "width": 640,
+            "height": 360,
+            "detection": {
+                "person": 26.900000000000112,
+                "suitcase": 0.2,
+                "person_area": 0.016780348880247566,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941770/uk-videos/1493591358874992648.mp4",
+            "lon": 30.586233,
+            "lat": 50.41569,
+            "created_at": 1644934904,
+            "id": 1493591358874992648,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1493591234170007555/pu/vid/320x568/7cb67rFriVTK00tb.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941770/uk-videos/1493591358874992648.jpg",
+            "width": 320,
+            "height": 568,
+            "detection": {
+                "person": 0.4,
+                "bird": 0.1,
+                "person_area": 0.0008172550587914884,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941771/uk-videos/1493139479338659843.mp4",
+            "lon": 30.570635,
+            "lat": 50.19963,
+            "created_at": 1644827167,
+            "id": 1493139479338659843,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1493139323658686470/pu/vid/320x568/46wf-3zWyZ9ZmWwv.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941771/uk-videos/1493139479338659843.jpg",
+            "width": 320,
+            "height": 568,
+            "detection": {
+                "teddy bear": 0.1,
+                "dog": 0.1,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941772/uk-videos/1492545993623187466.mp4",
+            "lon": 30.562978,
+            "lat": 50.426483,
+            "created_at": 1644685669,
+            "id": 1492545993623187466,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1492545942125522947/pu/vid/720x1280/Ofim6TdmgvjME04O.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941772/uk-videos/1492545993623187466.jpg",
+            "width": 720,
+            "height": 1280,
+            "detection": {
+                "motorcycle": 0.9999999999999999,
+                "person": 2.3000000000000007,
+                "umbrella": 0.2,
+                "person_area": 0.0005707527142595093,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941772/uk-videos/1491728628090126337.mp4",
+            "lon": 30.523447,
+            "lat": 50.416944,
+            "created_at": 1644490794,
+            "id": 1491728628090126337,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1491726902696067086/pu/vid/720x720/YmeHpHmqLA_Gxp-i.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941772/uk-videos/1491728628090126337.jpg",
+            "width": 720,
+            "height": 720,
+            "detection": {
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941774/uk-videos/1490434259936591875.mp4",
+            "lon": 30.526691,
+            "lat": 50.451932,
+            "created_at": 1644182193,
+            "id": 1490434259936591875,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1490434103572942848/pu/vid/800x360/AzzbOcUUP5TLggHx.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941774/uk-videos/1490434259936591875.jpg",
+            "width": 800,
+            "height": 360,
+            "detection": {
+                "tv": 2.9000000000000012,
+                "person": 8.099999999999987,
+                "bottle": 0.7999999999999999,
+                "cup": 0.1,
+                "chair": 0.4,
+                "sports ball": 0.1,
+                "person_area": 0.03422274103066257,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941775/uk-videos/1489260218185781255.mp4",
+            "lon": 30.52528,
+            "lat": 50.448574,
+            "created_at": 1643902279,
+            "id": 1489260218185781255,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1489260164808990721/pu/vid/720x1280/OprgQglfyv9wco6Y.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941775/uk-videos/1489260218185781255.jpg",
+            "width": 720,
+            "height": 1280,
+            "detection": {
+                "person": 3.0000000000000013,
+                "person_area": 0.9074530382951096,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941776/uk-videos/1489240082695573507.mp4",
+            "lon": 30.517484,
+            "lat": 50.445422,
+            "created_at": 1643897479,
+            "id": 1489240082695573507,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1489239992652210178/pu/vid/480x270/xoOYIcUJTL2hDWa2.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941776/uk-videos/1489240082695573507.jpg",
+            "width": 480,
+            "height": 270,
+            "detection": {
+                "person": 3.0000000000000013,
+                "bottle": 0.7999999999999999,
+                "cup": 1.2,
+                "person_area": 0.09561626960833863,
+                "outside": 1.0,
+                "twitter": true
+            }
+        },
+        {
+            "url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941778/uk-videos/1489234210925727751.mp4",
+            "lon": 30.517484,
+            "lat": 50.445422,
+            "created_at": 1643896079,
+            "id": 1489234210925727751,
+            "twitter_url": "https://video.twimg.com/ext_tw_video/1489234151899336712/pu/vid/1280x720/TyLqbIA5Yf93o3HQ.mp4?tag=12",
+            "thumbnail_url": "http://res.cloudinary.com/dofsxppi1/video/upload/v1645941778/uk-videos/1489234210925727751.jpg",
+            "width": 1280,
+            "height": 720,
+            "detection": {
+                "person": 4.100000000000001,
+                "chair": 2.600000000000001,
+                "tv": 0.9999999999999999,
+                "cup": 0.4,
+                "laptop": 0.5,
+                "bottle": 0.2,
+                "person_area": 0.022809814565201713,
+                "outside": 1.0,
+                "twitter": true
+            }
         }
     ]
 }

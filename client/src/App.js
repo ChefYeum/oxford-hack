@@ -30,11 +30,19 @@ const VIDEO_CLIPS = [{
 ];
 
 
-const VideoPreview = ({lat, lon, video_url}) => {
+const VideoPreview = ({lat, lon, thumb_url, video_url}) => {
+
+  const [interact, setInteract] = React.useState(false)
 
   return <Marker longitude={lon} latitude={lat}
-    anchor="center">
-      <video className="rounded-full w-24 h-24 object-cover bg-white p-1" src={video_url} autoPlay={true} muted={true}/>
+    anchor="center"
+    >
+    {<img className="rounded-full w-24 h-24 object-cover bg-white p-1" src={thumb_url}
+      onMouseEnter={() => setInteract(true)} />}
+      {interact && <video className="absolute rounded-full w-24 h-24 object-cover bg-white p-1 top-0 left-0" src={video_url} muted={true}
+          autoPlay={true}
+          loop={true}
+        /> }
   </Marker>
 
 };
@@ -54,28 +62,30 @@ const VideoClipPopup = ({ setShowPopUp, sourceUrl }) => (
   </>
 );
 
+// Show a video in fullscreen
+const VideoClip = ({id, sourceUrl}) => {
+  return <>
+    <video className="absolute w-auto h-full bg-white p-1 top-0 left-0 mx-auto" src={sourceUrl} muted={true} autoPlay={true} loop={true} />
+    <div className='absolute top-0 right-0'>{id}</div>
+  </>
+}
+
+
 export default function App() {
+
   const [showPopup, setShowPopup] = React.useState(true);
 
-  const [data_ml, setDataML] = React.useState(null);
-  const [data_coords, setDataCoords] = React.useState(null);
+  const [data, setData] = React.useState(null);
+
+  const [focus, setFocus] = React.useState(null);
 
   // fetch data from /videos_twitter.json
   React.useEffect(() => {
-    fetch('/videos_twitter.json')
+    fetch('/videos_twitter_2.json')
       .then(response => response.json())
-      .then(data => setDataML(data))
+      .then(data => setData(data.data))
       .catch(error => console.log(error));
   }, []);
-
-  // fetch data from /saved_videos.json
-  React.useEffect(() => {
-    fetch('/saved_cleaned.json')
-      .then(response => response.json())
-      .then(data => setDataCoords(data.data))
-      .catch(error => console.log(error));
-  }, []);
-
 
 
   return (
@@ -90,9 +100,17 @@ export default function App() {
           mapStyle="mapbox://styles/mapbox/streets-v9"
           mapboxAccessToken={MAPBOX_TOKEN}
         >
-          {/* <VideoClipPopup setShowPopUp={setShowPopup} sourceUrl={DUMMY_VIDEO_CLIP_URL} /> */}
-         { data_coords && data_coords.map(item => <VideoPreview key={item.id} lat={item.lat} lon={item.lon} video_url={item.url}/>) }
+          {data && data.map((item, idx) =>
+            <div key={item.id} onClick={() => setFocus(idx)}>
+             <VideoPreview lat={item.lat} lon={item.lon}
+               video_url={item.url} thumb_url={item.thumbnail_url}
+                />
+           </div>)}
         </Map>
+        {focus !== null && <div onClick={() => setFocus(null)}>
+          <VideoClip sourceUrl={data[focus].url} id={data[focus].id}/>
+          </div>
+          }
       </div>
     </>
   );
