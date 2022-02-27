@@ -72,9 +72,20 @@ const VideoClip = ({id, sourceUrl}) => {
   </>
 };
 
+
 const filterFuncs = {
-  outside: (data) => true,
-  car: (data ) => data.detection.car && data.detection.car > 0.5,
+  // car: (data ) => data.detection.car && data.detection.car > 0.5,
+  crowded: (data ) => data.detection.person && data.detection.person > 10,
+  selfie: (data) => data.detection.person_area && data.detection.person_area > 0.4,
+  road: (data) => {
+    const undefined_or_0 = (x) => (x === undefined) ? 0 : x;
+    const vehicles = [data.detection.car, data.detection["traffic light"], data.detection.bus, data.detection.truck, data.detection.motorcycle];
+    // compute the sum
+    const sum = vehicles.map(undefined_or_0).reduce((a, b) => a + b);
+    return sum > 1.5;
+  },
+  // inside: (data) => data.detection.chair && data.detection.chair > 0.2 || data.detection.bottle && data.detection.bottle > 0.1 ,
+  // dog: data => data.detection.dog && data.detection.dog > 0.1
 };
 
 const MLButton = ({filter, setFilter}) => {
@@ -101,15 +112,15 @@ export default function App() {
   React.useEffect(() => {
     fetch('/videos_twitter_2.json')
       .then(response => response.json())
-      .then(data => setData(data.data))
+      .then(data => setData(data.data.map((x, idx) => {x.idx = idx; return x})))
       .catch(error => console.log(error));
   }, []);
 
   const mapper = (item, idx) =>
-    <div key={item.id} onClick={() => setFocus(idx)}>
+    <div key={item.id} onClick={() => setFocus(item.idx)}>
       <VideoPreview lat={item.lat} lon={item.lon}
         video_url={item.url} thumb_url={item.thumbnail_url}
-        emphasize={filterFuncs[filter] && filterFuncs[filter](item)} />
+        emphasize={filter == null || (filterFuncs[filter] && filterFuncs[filter](item))} />
     </div>;
 
   return (
@@ -124,7 +135,8 @@ export default function App() {
           mapStyle="mapbox://styles/mapbox/streets-v9"
           mapboxAccessToken={MAPBOX_TOKEN}
         >
-          {data && (filterFuncs[filter] ? [...data.filter(x => !filterFuncs[filter](x)).map(mapper), data.filter(filterFuncs[filter]).map(mapper)] : data.map(mapper))
+          {data && (filterFuncs[filter] ? 
+          [...data.filter(x => !filterFuncs[filter](x)).map(mapper), data.filter(filterFuncs[filter]).map(mapper)] : data.map(mapper))
            }
         </Map>
         {focus !== null && <div onClick={() => setFocus(null)}>
