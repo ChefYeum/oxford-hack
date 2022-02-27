@@ -30,11 +30,22 @@ const VIDEO_CLIPS = [{
 ];
 
 
-const VideoPreview = ({lat, lon, video_url}) => {
+const VideoPreview = ({lat, lon, thumb_url, video_url}) => {
+
+  const [interact, setInteract] = React.useState(false)
 
   return <Marker longitude={lon} latitude={lat}
-    anchor="center">
-      <video className="rounded-full w-24 h-24 object-cover bg-white p-1" src={video_url} autoPlay={true} muted={true}/>
+    anchor="center"
+    >
+    {<img className="rounded-full w-24 h-24 object-cover bg-white p-1" src={thumb_url}
+      onMouseEnter={() => {
+        console.log("mouse enter");
+        setInteract(true)
+      }} />}
+      {interact && <video className="absolute rounded-full w-24 h-24 object-cover bg-white p-1 top-0 left-0" src={video_url} muted={true}
+          autoPlay={true}
+          loop={true}
+        /> }
   </Marker>
 
 };
@@ -90,8 +101,8 @@ export default function App() {
           mapStyle="mapbox://styles/mapbox/streets-v9"
           mapboxAccessToken={MAPBOX_TOKEN}
         >
-          {/* <VideoClipPopup setShowPopUp={setShowPopup} sourceUrl={DUMMY_VIDEO_CLIP_URL} /> */}
-         { data_coords && data_coords.map(item => <VideoPreview key={item.id} lat={item.lat} lon={item.lon} video_url={item.url}/>) }
+         { data_coords && data_coords.map(item => <VideoPreview key={item.id} lat={item.lat} lon={item.lon}
+          video_url={item.url} thumb_url={item.thumbnail_url}/>) }
         </Map>
       </div>
     </>
