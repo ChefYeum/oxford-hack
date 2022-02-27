@@ -1,7 +1,6 @@
 /* global document */
 import * as React from 'react';
-import Map, { Marker } from 'react-map-gl';
-
+import Map, { Marker, Popup } from 'react-map-gl';
 import ReactPlayer from 'react-player';
 
 const MAPBOX_TOKEN = 'pk.eyJ1IjoiY2hlZnlldW0iLCJhIjoiY2wwNDQ2ZjFxMGR4czNxcGRxdDlsODQwdCJ9.j3HMK_j8BvB-EpAMe76wAQ';
@@ -10,12 +9,13 @@ const MAPBOX_TOKEN = 'pk.eyJ1IjoiY2hlZnlldW0iLCJhIjoiY2wwNDQ2ZjFxMGR4czNxcGRxdDl
 const UA_COORDINATES = {
   'latitude': 49.34051271789116,
   'longitude': 31.21759249962616
-}
+};
 
 export default function App() {
+  const [showPopup, setShowPopup] = React.useState(true);
+
   return (
     <div className='map-container'>
-
       <Map
         initialViewState={{
           latitude: UA_COORDINATES.latitude,
@@ -25,14 +25,13 @@ export default function App() {
         mapStyle="mapbox://styles/mapbox/streets-v9"
         mapboxAccessToken={MAPBOX_TOKEN}
       >
-        <Marker longitude={-100} latitude={40} anchor="bottom" >
-          <img src='https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg' />
-        </Marker> */}
-        {/* <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' /> */}
-
+        <Popup longitude={UA_COORDINATES.longitude} latitude={UA_COORDINATES.latitude}
+          anchor="bottom"
+          onClose={() => setShowPopup(false)}>
+          Video goes here
+        </Popup>
       </Map>
-    </div>
-  );
+    </div>);
 }
 
 
