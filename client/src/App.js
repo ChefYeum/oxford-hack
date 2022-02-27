@@ -38,10 +38,7 @@ const VideoPreview = ({lat, lon, thumb_url, video_url}) => {
     anchor="center"
     >
     {<img className="rounded-full w-24 h-24 object-cover bg-white p-1" src={thumb_url}
-      onMouseEnter={() => {
-        console.log("mouse enter");
-        setInteract(true)
-      }} />}
+      onMouseEnter={() => setInteract(true)} />}
       {interact && <video className="absolute rounded-full w-24 h-24 object-cover bg-white p-1 top-0 left-0" src={video_url} muted={true}
           autoPlay={true}
           loop={true}
@@ -65,11 +62,19 @@ const VideoClipPopup = ({ setShowPopUp, sourceUrl }) => (
   </>
 );
 
+// Show a video in fullscreen
+const VideoClip = ({sourceUrl}) => {
+  return <video className="absolute w-auto h-full bg-white p-1 top-0 left-0 mx-auto" src={sourceUrl} muted={true} autoPlay={true} loop={true} />
+}
+
+
 export default function App() {
   const [showPopup, setShowPopup] = React.useState(true);
 
   const [data_ml, setDataML] = React.useState(null);
   const [data_coords, setDataCoords] = React.useState(null);
+  
+  const [focus, setFocus] = React.useState(null);
 
   // fetch data from /videos_twitter.json
   React.useEffect(() => {
@@ -101,9 +106,17 @@ export default function App() {
           mapStyle="mapbox://styles/mapbox/streets-v9"
           mapboxAccessToken={MAPBOX_TOKEN}
         >
-         { data_coords && data_coords.map(item => <VideoPreview key={item.id} lat={item.lat} lon={item.lon}
-          video_url={item.url} thumb_url={item.thumbnail_url}/>) }
+          {data_coords && data_coords.map((item, idx) =>
+            <div key={item.id} onClick={() => setFocus(idx)}>
+             <VideoPreview lat={item.lat} lon={item.lon}
+               video_url={item.url} thumb_url={item.thumbnail_url}
+                />
+           </div>)}
         </Map>
+        {focus !== null && <div onClick={() => setFocus(null)}>
+          <VideoClip sourceUrl={data_coords[focus].url}/>
+          </div>
+          }
       </div>
     </>
   );
