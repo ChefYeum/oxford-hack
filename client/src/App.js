@@ -65,7 +65,7 @@ const VideoClipPopup = ({ setShowPopUp, sourceUrl }) => (
 // Show a video in fullscreen
 const VideoClip = ({id, sourceUrl}) => {
   return <>
-    <video className="absolute m-0 w-auto h-full bg-white p-1 top-0 left-0 mx-auto inset-0" src={sourceUrl} muted={true} autoPlay={true} loop={true} />
+    <video className="object-contain pxy-4 absolute m-0 w-auto h-full bg-white p-1 top-0 left-0 mx-auto inset-0 shadow-2xl" src={sourceUrl} muted={true} autoPlay={true} loop={true} />
     <div className='absolute top-0 right-0'>{id}</div>
   </>
 }
