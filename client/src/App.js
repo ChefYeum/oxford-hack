@@ -72,29 +72,20 @@ const VideoClip = ({id, sourceUrl}) => {
 
 
 export default function App() {
+
   const [showPopup, setShowPopup] = React.useState(true);
 
-  const [data_ml, setDataML] = React.useState(null);
-  const [data_coords, setDataCoords] = React.useState(null);
-  
+  const [data, setData] = React.useState(null);
+
   const [focus, setFocus] = React.useState(null);
 
   // fetch data from /videos_twitter.json
   React.useEffect(() => {
-    fetch('/videos_twitter.json')
+    fetch('/videos_twitter_2.json')
       .then(response => response.json())
-      .then(data => setDataML(data))
+      .then(data => setData(data.data))
       .catch(error => console.log(error));
   }, []);
-
-  // fetch data from /saved_videos.json
-  React.useEffect(() => {
-    fetch('/saved_cleaned.json')
-      .then(response => response.json())
-      .then(data => setDataCoords(data.data))
-      .catch(error => console.log(error));
-  }, []);
-
 
 
   return (
@@ -109,7 +100,7 @@ export default function App() {
           mapStyle="mapbox://styles/mapbox/streets-v9"
           mapboxAccessToken={MAPBOX_TOKEN}
         >
-          {data_coords && data_coords.map((item, idx) =>
+          {data && data.map((item, idx) =>
             <div key={item.id} onClick={() => setFocus(idx)}>
              <VideoPreview lat={item.lat} lon={item.lon}
                video_url={item.url} thumb_url={item.thumbnail_url}
@@ -117,7 +108,7 @@ export default function App() {
            </div>)}
         </Map>
         {focus !== null && <div onClick={() => setFocus(null)}>
-          <VideoClip sourceUrl={data_coords[focus].url} id={data_coords[focus].id}/>
+          <VideoClip sourceUrl={data[focus].url} id={data[focus].id}/>
           </div>
           }
       </div>
