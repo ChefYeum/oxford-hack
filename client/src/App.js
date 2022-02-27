@@ -63,8 +63,11 @@ const VideoClipPopup = ({ setShowPopUp, sourceUrl }) => (
 );
 
 // Show a video in fullscreen
-const VideoClip = ({sourceUrl}) => {
-  return <video className="absolute w-auto h-full bg-white p-1 top-0 left-0 mx-auto" src={sourceUrl} muted={true} autoPlay={true} loop={true} />
+const VideoClip = ({id, sourceUrl}) => {
+  return <>
+    <video className="absolute w-auto h-full bg-white p-1 top-0 left-0 mx-auto" src={sourceUrl} muted={true} autoPlay={true} loop={true} />
+    <div className='absolute top-0 right-0'>{id}</div>
+  </>
 }
 
 
@@ -114,7 +117,7 @@ export default function App() {
            </div>)}
         </Map>
         {focus !== null && <div onClick={() => setFocus(null)}>
-          <VideoClip sourceUrl={data_coords[focus].url}/>
+          <VideoClip sourceUrl={data_coords[focus].url} id={data_coords[focus].id}/>
           </div>
           }
       </div>
