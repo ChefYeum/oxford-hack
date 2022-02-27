@@ -30,16 +30,18 @@ const VIDEO_CLIPS = [{
 ];
 
 
-const VideoPreview = ({lat, lon, thumb_url, video_url}) => {
+const VideoPreview = ({lat, lon, thumb_url, video_url, emphasize}) => {
 
   const [interact, setInteract] = React.useState(false)
+
+  const size = emphasize ? 'w-32 h-32' : 'w-12 h-12'; 
 
   return <Marker longitude={lon} latitude={lat}
     anchor="center"
     >
-    {<img className="rounded-full w-24 h-24 object-cover bg-white p-1" src={thumb_url}
+    {<img className={"transition rounded-full object-cover bg-white p-1 " + size} src={thumb_url}
       onMouseEnter={() => setInteract(true)} />}
-      {interact && <video className="absolute rounded-full w-24 h-24 object-cover bg-white p-1 top-0 left-0" src={video_url} muted={true}
+      {interact && <video className={"transition absolute rounded-full object-cover bg-white p-1 top-0 left-0 " + size} src={video_url} muted={true}
           autoPlay={true}
           loop={true}
         /> }
@@ -68,10 +70,26 @@ const VideoClip = ({id, sourceUrl}) => {
     <video className="absolute w-auto h-full bg-white p-1 top-0 left-0 mx-auto" src={sourceUrl} muted={true} autoPlay={true} loop={true} />
     <div className='absolute top-0 right-0'>{id}</div>
   </>
-}
+};
+
+const filterFuncs = {
+  outside: (data) => true,
+  car: (data ) => data.detection.car && data.detection.car > 0.5,
+};
+
+const MLButton = ({filter, setFilter}) => {
+  return <div className="absolute bottom-5 right-0">
+    {Object.keys(filterFuncs).map(name => <button key={name}
+      className={"bg-blue-500 text-white font-bold py-2 px-4 rounded m-3 " + ((name !== filter) ? 'hover:' : '') + 'bg-blue-700'}
+      onClick={() => setFilter((name === filter) ? null : name)}>{name}</button>)}
+  </div>
+};
 
 
 export default function App() {
+
+  const [filter, setFilter] = React.useState(null);
+
 
   const [showPopup, setShowPopup] = React.useState(true);
 
@@ -87,6 +105,12 @@ export default function App() {
       .catch(error => console.log(error));
   }, []);
 
+  const mapper = (item, idx) =>
+    <div key={item.id} onClick={() => setFocus(idx)}>
+      <VideoPreview lat={item.lat} lon={item.lon}
+        video_url={item.url} thumb_url={item.thumbnail_url}
+        emphasize={filterFuncs[filter] && filterFuncs[filter](item)} />
+    </div>;
 
   return (
     <>
@@ -100,18 +124,15 @@ export default function App() {
           mapStyle="mapbox://styles/mapbox/streets-v9"
           mapboxAccessToken={MAPBOX_TOKEN}
         >
-          {data && data.map((item, idx) =>
-            <div key={item.id} onClick={() => setFocus(idx)}>
-             <VideoPreview lat={item.lat} lon={item.lon}
-               video_url={item.url} thumb_url={item.thumbnail_url}
-                />
-           </div>)}
+          {data && (filterFuncs[filter] ? [...data.filter(x => !filterFuncs[filter](x)).map(mapper), data.filter(filterFuncs[filter]).map(mapper)] : data.map(mapper))
+           }
         </Map>
         {focus !== null && <div onClick={() => setFocus(null)}>
           <VideoClip sourceUrl={data[focus].url} id={data[focus].id}/>
           </div>
           }
       </div>
+      <MLButton filter={filter} setFilter={setFilter}/>
     </>
   );
 }
