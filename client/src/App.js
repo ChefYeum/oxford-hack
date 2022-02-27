@@ -30,6 +30,16 @@ const VIDEO_CLIPS = [{
 ];
 
 
+const VideoPreview = ({lat, lon}) => {
+
+  return <Popup longitude={lon} latitude={lat}
+    className='p-6 bg-red-500'
+    anchor="bottom">
+      .
+  </Popup>
+
+};
+
 const VideoClipPopup = ({ setShowPopUp, sourceUrl }) => (
   <>
     <Popup longitude={UA_COORDINATES.longitude} latitude={UA_COORDINATES.latitude}
@@ -48,6 +58,27 @@ const VideoClipPopup = ({ setShowPopUp, sourceUrl }) => (
 export default function App() {
   const [showPopup, setShowPopup] = React.useState(true);
 
+  const [data_ml, setDataML] = React.useState(null);
+  const [data_coords, setDataCoords] = React.useState(null);
+
+  // fetch data from /videos_twitter.json
+  React.useEffect(() => {
+    fetch('/videos_twitter.json')
+      .then(response => response.json())
+      .then(data => setDataML(data))
+      .catch(error => console.log(error));
+  }, []);
+
+  // fetch data from /saved_videos.json
+  React.useEffect(() => {
+    fetch('/saved_cleaned.json')
+      .then(response => response.json())
+      .then(data => setDataCoords(data.data))
+      .catch(error => console.log(error));
+  }, []);
+
+
+
   return (
     <>
       <div className='map-container'>
@@ -60,7 +91,8 @@ export default function App() {
           mapStyle="mapbox://styles/mapbox/streets-v9"
           mapboxAccessToken={MAPBOX_TOKEN}
         >
-          <VideoClipPopup setShowPopUp={setShowPopup} sourceUrl={DUMMY_VIDEO_CLIP_URL} />
+          {/* <VideoClipPopup setShowPopUp={setShowPopup} sourceUrl={DUMMY_VIDEO_CLIP_URL} /> */}
+         { data_coords && data_coords.map(item => <VideoPreview key={item.id} lat={item.lat} lon={item.lon} />) }
         </Map>
       </div>
     </>
