@@ -84,7 +84,8 @@ const filterFuncs = {
     const sum = vehicles.map(undefined_or_0).reduce((a, b) => a + b);
     return sum > 1.5;
   },
-  // inside: (data) => data.detection.chair && data.detection.chair > 0.2 || data.detection.bottle && data.detection.bottle > 0.1 ,
+  inside: (data) => data.detection.outside < 0.5,
+  outside: (data) => data.detection.outside > 0.5,
   // dog: data => data.detection.dog && data.detection.dog > 0.1
 };
 
@@ -108,11 +109,13 @@ export default function App() {
 
   const [focus, setFocus] = React.useState(null);
 
+  const banned = {"1497669073374785500":true, "1497668417263911000":true, "1497718237026525200":true, "1497716296250712000":true, "1497714870149652500":true, "1497713280365781000":true, "1497711970677633000":true, "1497709969151611000":true, "1497708774894747600":true, "1497704805095067600":true, "1497695642445140000":true, "1497695392439410700":true, "1497694227215667200":true, "1497691574058299400":true, "1497690773692821500":true, "1497687738774171600":true, "1497685436952686600": true, "1497684838681305000":true, "1497683269181128700":true, "1497681261535522800":true, "1497680188167106600":true, "1497673896002261000":true, "1497679038604849200":true, "1492718201184178200": true, "1497671120778145800":true, "1497670652026933200":true, "1497669861845123000":true, "1497669346025427000":true, "1497664719724892200":true, "1497663665981608000":true, "1497271890058039300":true, "1487769788696957000": true, "1487384892677709800": true, "1495112011415498800": true, "1487808026811768800": true, "1497634273012199400": true, "1489742980864954400": true, "1493270784059576300": true, "149766366598160800": true, "1497110770617925600": true};
+
   // fetch data from /videos_twitter.json
   React.useEffect(() => {
     fetch('/videos_twitter_2.json')
       .then(response => response.json())
-      .then(data => setData(data.data.map((x, idx) => {x.idx = idx; return x})))
+      .then(data => setData(data.data.filter(x => !(x.id in banned) && (x.lon != 22.13572 && x.lat != 44.386383)).map((x, idx) => {x.idx = idx; return x})))
       .catch(error => console.log(error));
   }, []);
 
