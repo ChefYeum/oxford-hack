@@ -33,21 +33,28 @@ const VIDEO_CLIPS = [
   },
 ];
 
-const VideoPreview = ({ lat, lon, thumb_url, video_url }) => {
+const VideoPreview = ({ lat, lon, thumb_url, video_url, emphasize }) => {
   const [interact, setInteract] = React.useState(false);
+
+  const size = emphasize ? "w-32 h-32" : "w-12 h-12";
 
   return (
     <Marker longitude={lon} latitude={lat} anchor="center">
       {
         <img
-          className="object-cover w-24 h-24 p-1 bg-white rounded-full"
+          className={
+            "transition rounded-full object-cover bg-white p-1 " + size
+          }
           src={thumb_url}
           onMouseEnter={() => setInteract(true)}
         />
       }
       {interact && (
         <video
-          className="absolute top-0 left-0 object-cover w-24 h-24 p-1 bg-white rounded-full"
+          className={
+            "transition absolute rounded-full object-cover bg-white p-1 top-0 left-0 " +
+            size
+          }
           src={video_url}
           muted={true}
           autoPlay={true}
@@ -82,7 +89,7 @@ const VideoClip = ({ id, sourceUrl }) => {
   return (
     <>
       <video
-        className="absolute top-0 left-0 w-auto h-full p-1 mx-auto bg-white"
+        className="absolute inset-0 top-0 left-0 object-contain w-auto h-full p-1 m-0 mx-auto bg-white shadow-2xl pxy-4"
         src={sourceUrl}
         muted={true}
         autoPlay={true}
@@ -93,7 +100,51 @@ const VideoClip = ({ id, sourceUrl }) => {
   );
 };
 
+const filterFuncs = {
+  // car: (data ) => data.detection.car && data.detection.car > 0.5,
+  crowded: (data) => data.detection.person && data.detection.person > 10,
+  selfie: (data) =>
+    data.detection.person_area && data.detection.person_area > 0.4,
+  road: (data) => {
+    const undefined_or_0 = (x) => (x === undefined ? 0 : x);
+    const vehicles = [
+      data.detection.car,
+      data.detection["traffic light"],
+      data.detection.bus,
+      data.detection.truck,
+      data.detection.motorcycle,
+    ];
+    // compute the sum
+    const sum = vehicles.map(undefined_or_0).reduce((a, b) => a + b);
+    return sum > 1.5;
+  },
+  // inside: (data) => data.detection.chair && data.detection.chair > 0.2 || data.detection.bottle && data.detection.bottle > 0.1 ,
+  // dog: data => data.detection.dog && data.detection.dog > 0.1
+};
+
+const MLButton = ({ filter, setFilter }) => {
+  return (
+    <div className="absolute right-0 bottom-20">
+      {Object.keys(filterFuncs).map((name) => (
+        <button
+          key={name}
+          className={
+            "bg-blue-500 text-white font-bold py-2 px-4 rounded m-3 " +
+            (name !== filter ? "hover:" : "") +
+            "bg-blue-700"
+          }
+          onClick={() => setFilter(name === filter ? null : name)}
+        >
+          {name}
+        </button>
+      ))}
+    </div>
+  );
+};
+
 export default function App() {
+  const [filter, setFilter] = React.useState(null);
+
   const [showPopup, setShowPopup] = React.useState(true);
   const contractAddress = "0x5fbdb2315678afecb367f032d93f642f64180aa3";
   const abi = contract.abi;
@@ -203,7 +254,7 @@ export default function App() {
   useEffect(() => {
     checkWalletIsConnected();
     getBalance();
-  }, []);
+  }, [getBalance]);
 
   const [data, setData] = React.useState(null);
 
@@ -213,17 +264,38 @@ export default function App() {
   React.useEffect(() => {
     fetch("/videos_twitter_2.json")
       .then((response) => response.json())
-      .then((data) => setData(data.data))
+      .then((data) =>
+        setData(
+          data.data.map((x, idx) => {
+            x.idx = idx;
+            return x;
+          })
+        )
+      )
       .catch((error) => console.log(error));
   }, []);
 
+  const mapper = (item, idx) => (
+    <div key={item.id} onClick={() => setFocus(item.idx)}>
+      <VideoPreview
+        lat={item.lat}
+        lon={item.lon}
+        video_url={item.url}
+        thumb_url={item.thumbnail_url}
+        emphasize={
+          filter == null || (filterFuncs[filter] && filterFuncs[filter](item))
+        }
+      />
+    </div>
+  );
+
   return (
     <div className="relative min-h-screen">
-      <div className="top-0 flex items-center justify-between w-full h-16 px-8 bg-black opacity-75">
+      <div className="top-0 flex items-center justify-between w-full h-16 px-4 bg-black opacity-75 md:px-8">
         <div className="text-xl text-white">CrowdInfo</div>
-        <div className="flex items-center space-x-4 text-white">
+        <div className="flex items-center pl-4 space-x-4 text-sm text-white md:text-base">
           <div>
-            Total donated: ${usdBalance} (CRI {ethBalance})
+            Total earned: ${usdBalance} (CRI {ethBalance})
           </div>
           <div>
             {currentAccount ? (
@@ -231,7 +303,7 @@ export default function App() {
                 className="px-4 py-2 text-sm font-medium text-white bg-green-500 border border-transparent rounded-md cursor-pointer whitespace-nowrap hover:bg-opacity-75"
                 onClick={donationButtonHandler}
               >
-                Donate
+                Incentivise
               </button>
             ) : (
               connectWalletButton()
@@ -250,16 +322,12 @@ export default function App() {
           mapboxAccessToken={MAPBOX_TOKEN}
         >
           {data &&
-            data.map((item, idx) => (
-              <div key={item.id} onClick={() => setFocus(idx)}>
-                <VideoPreview
-                  lat={item.lat}
-                  lon={item.lon}
-                  video_url={item.url}
-                  thumb_url={item.thumbnail_url}
-                />
-              </div>
-            ))}
+            (filterFuncs[filter]
+              ? [
+                  ...data.filter((x) => !filterFuncs[filter](x)).map(mapper),
+                  data.filter(filterFuncs[filter]).map(mapper),
+                ]
+              : data.map(mapper))}
         </Map>
         {focus !== null && (
           <div onClick={() => setFocus(null)}>
@@ -267,6 +335,7 @@ export default function App() {
           </div>
         )}
       </div>
+      <MLButton filter={filter} setFilter={setFilter} />
     </div>
   );
 }
