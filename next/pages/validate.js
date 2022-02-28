@@ -1,35 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Map, { Marker, Popup } from "react-map-gl";
-import ReactPlayer from "react-player";
 import contract from "../blockchain/compiled_contracts/Payable.json";
 import { ethers } from "ethers";
-import Head from "next/head";
+
+const payoutAddress = "0x102e07b68734f33a097314d08f80e839108ee605";
 
 const UA_COORDINATES = {
   latitude: 49.34051271789116,
   longitude: 31.21759249962616,
 };
-
-const DUMMY_VIDEO_CLIP_URL =
-  "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4";
-
-const VIDEO_CLIPS = [
-  {
-    latitude: 49.34051271789116,
-    longitude: 31.21759249962616,
-    src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/forbiggerescapes.mp4",
-  },
-  {
-    latitude: 49.3405,
-    longitude: 31.21759249962616,
-    src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/forbiggerescapes.mp4",
-  },
-  {
-    latitude: 49.34051271789116,
-    longitude: 31.21759249962616,
-    src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/forbiggerescapes.mp4",
-  },
-];
 
 const VideoPreview = ({ lat, lon, thumb_url, video_url, emphasize }) => {
   const [interact, setInteract] = React.useState(false);
@@ -41,7 +20,7 @@ const VideoPreview = ({ lat, lon, thumb_url, video_url, emphasize }) => {
       {
         <img
           className={
-            "transition rounded-full object-cover bg-white p-1 " + size
+            "transition rounded-full object-cover bg-red-300 p-1 " + size
           }
           src={thumb_url}
           onMouseEnter={() => setInteract(true)}
@@ -50,7 +29,7 @@ const VideoPreview = ({ lat, lon, thumb_url, video_url, emphasize }) => {
       {interact && (
         <video
           className={
-            "transition absolute rounded-full object-cover bg-white p-1 top-0 left-0 " +
+            "transition absolute rounded-full object-cover bg-red-300 p-1 top-0 left-0 " +
             size
           }
           src={video_url}
@@ -63,38 +42,24 @@ const VideoPreview = ({ lat, lon, thumb_url, video_url, emphasize }) => {
   );
 };
 
-const VideoClipPopup = ({ setShowPopUp, sourceUrl }) => (
-  <>
-    <Popup
-      longitude={UA_COORDINATES.longitude}
-      latitude={UA_COORDINATES.latitude}
-      style={{ background: "#f00" }}
-      anchor="bottom"
-      onClose={() => setShowPopUp(false)}
-    >
-      <ReactPlayer
-        url={sourceUrl}
-        // width='100%' height='auto'
-        className={"min-w-96 min-h-96"}
-        loop={true}
-      />
-    </Popup>
-  </>
-);
+const VideoPreviewGray = ({ lat, lon, thumb_url, video_url, emphasize }) => {
+  const [interact, setInteract] = React.useState(false);
 
-// Show a video in fullscreen
-const VideoClip = ({ id, sourceUrl }) => {
+  const size = "w-16 h-16";
+
   return (
-    <>
-      <video
-        className="absolute inset-0 top-0 left-0 object-contain w-auto h-full p-1 m-0 mx-auto bg-white shadow-2xl pxy-4"
-        src={sourceUrl}
-        muted={true}
-        autoPlay={true}
-        loop={true}
-      />
-      <div className="absolute top-0 right-0">{id}</div>
-    </>
+    <Marker longitude={lon} latitude={lat} anchor="center">
+      {
+        <img
+          className={
+            "transition rounded-full object-cover bg-white p-1 grayscale " +
+            size
+          }
+          src={thumb_url}
+          // onMouseEnter={() => setInteract(true)}
+        />
+      }
+    </Marker>
   );
 };
 
@@ -243,8 +208,58 @@ export default function App() {
     const payableContract = new ethers.Contract(contractAddress, abi, provider);
     console.log("Calling contract");
     const data = await payableContract.getBalance();
-    setETHBalance(parseFloat(ethers.utils.formatEther(data)) + 0.31);
+    setETHBalance(ethers.utils.formatEther(data));
     setUSDBalance(ethBalance * ethUSDRate);
+  };
+
+  const payoutUSD = async (amountInUSD) => {
+    const provider = new ethers.providers.JsonRpcProvider(
+      "https://rpc-mumbai.maticvigil.com"
+    );
+    const payableContract = new ethers.Contract(contractAddress, abi, provider);
+    const amountInETH = amountInUSD / ethUSDRate;
+    const data = await payableContract.interface.encodeFunctionData(
+      "transfer(address,uint256)",
+      [payoutAddress, ethers.utils.parseEther(amountInETH.toString())]
+    );
+    const result = await payableContract.interface.decodeFunctionResult(
+      "transfer(address,uint256)",
+      data
+    );
+
+    console.log("payout result", result);
+    // .transfer();
+  };
+
+  // Show a video in fullscreen
+  const VideoClip = ({ id, sourceUrl, payoutInUSD }) => {
+    return (
+      <div className="absolute inset-0 top-0 left-0 flex flex-col h-full m-0 mx-auto">
+        <div className="h-full p-1 mx-auto bg-white">
+          <div className="flex items-center justify-between h-10 p-2">
+            <div>Payout: ${payoutInUSD}.00</div>
+            <div className="space-x-2">
+              <button
+                onClick={() => payoutUSD(parseInt(payoutInUSD))}
+                className="px-4 py-2 text-sm font-medium text-white bg-green-500 border border-transparent rounded-md cursor-pointer whitespace-nowrap hover:bg-opacity-75"
+              >
+                Approve
+              </button>
+              <button className="px-4 py-2 text-sm font-medium text-white bg-red-500 border border-transparent rounded-md cursor-pointer whitespace-nowrap hover:bg-opacity-75">
+                Reject
+              </button>
+            </div>
+          </div>
+          <video
+            className="object-contain w-auto h-full mx-auto shadow-2xl "
+            src={sourceUrl}
+            muted={true}
+            autoPlay={true}
+            loop={true}
+          />
+        </div>
+      </div>
+    );
   };
 
   useEffect(() => {
@@ -252,6 +267,7 @@ export default function App() {
     getBalance();
   }, []);
 
+  const [dataGray, setDataGray] = React.useState(null);
   const [data, setData] = React.useState(null);
 
   const [focus, setFocus] = React.useState(null);
@@ -304,7 +320,7 @@ export default function App() {
     fetch("/videos_twitter_2.json")
       .then((response) => response.json())
       .then((data) =>
-        setData(
+        setDataGray(
           data.data
             .filter(
               (x) =>
@@ -317,7 +333,33 @@ export default function App() {
         )
       )
       .catch((error) => console.log(error));
+
+    fetch("/to_validate.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setData(
+          data.data.map((x, idx) => {
+            x.idx = idx;
+            return x;
+          })
+        );
+      })
+      .catch((error) => console.log(error));
   }, []);
+
+  const mapperGray = (item, idx) => (
+    <div key={item.id}>
+      <VideoPreviewGray
+        lat={item.lat}
+        lon={item.lon}
+        video_url={item.url}
+        thumb_url={item.thumbnail_url}
+        emphasize={
+          filter == null || (filterFuncs[filter] && filterFuncs[filter](item))
+        }
+      />
+    </div>
+  );
 
   const mapper = (item, idx) => (
     <div key={item.id} onClick={() => setFocus(item.idx)}>
@@ -335,23 +377,21 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen">
-      <Head>
-        <title>CrowdInfo</title>
-      </Head>
       <div className="top-0 flex items-center justify-between w-full h-16 px-4 bg-black opacity-75 md:px-8">
-        <div className="text-xl text-white">CrowdInfo</div>
+        <div className="text-xl text-white">CrowdInfo Validation View</div>
         <div className="flex items-center pl-4 space-x-4 text-sm text-white md:text-base">
           <div>
-            Total earned: ${usdBalance} (CRI {ethBalance})
+            Total to pay out: ${usdBalance * 0.812} (CRI {ethBalance * 0.812})
           </div>
           <div>
             {currentAccount ? (
-              <button
-                className="px-4 py-2 text-sm font-medium text-white bg-green-500 border border-transparent rounded-md cursor-pointer whitespace-nowrap hover:bg-opacity-75"
-                onClick={donationButtonHandler}
-              >
-                Incentivise
-              </button>
+              // <button
+              //   className="px-4 py-2 text-sm font-medium text-white bg-green-500 border border-transparent rounded-md cursor-pointer whitespace-nowrap hover:bg-opacity-75"
+              //   onClick={donationButtonHandler}
+              // >
+              //   Incentivise
+              // </button>
+              <></>
             ) : (
               connectWalletButton()
             )}
@@ -368,21 +408,20 @@ export default function App() {
           mapStyle="mapbox://styles/mapbox/streets-v9"
           mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
         >
-          {data &&
-            (filterFuncs[filter]
-              ? [
-                  ...data.filter((x) => !filterFuncs[filter](x)).map(mapper),
-                  data.filter(filterFuncs[filter]).map(mapper),
-                ]
-              : data.map(mapper))}
+          {dataGray && dataGray.map(mapperGray)}
+          {data && data.map(mapper)}
         </Map>
         {focus !== null && (
           <div onClick={() => setFocus(null)}>
-            <VideoClip sourceUrl={data[focus].url} id={data[focus].id} />
+            <VideoClip
+              sourceUrl={data[focus].url}
+              id={data[focus].id}
+              payoutInUSD={data[focus].payoutInUSD}
+            />
           </div>
         )}
       </div>
-      <MLButton filter={filter} setFilter={setFilter} />
+      {/* <MLButton filter={filter} setFilter={setFilter} /> */}
     </div>
   );
 }
