@@ -4,8 +4,6 @@ import ReactPlayer from "react-player";
 import contract from "./contracts/Payable.json";
 import { ethers } from "ethers";
 
-const MAPBOX_TOKEN =
-  "pk.eyJ1IjoiY2hlZnlldW0iLCJhIjoiY2wwNDQ2ZjFxMGR4czNxcGRxdDlsODQwdCJ9.j3HMK_j8BvB-EpAMe76wAQ";
 
 const UA_COORDINATES = {
   latitude: 49.34051271789116,
@@ -365,7 +363,7 @@ export default function App() {
             zoom: 5.8,
           }}
           mapStyle="mapbox://styles/mapbox/streets-v9"
-          mapboxAccessToken={MAPBOX_TOKEN}
+          mapboxAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
         >
           {data &&
             (filterFuncs[filter]
