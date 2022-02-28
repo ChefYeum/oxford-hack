@@ -6,6 +6,7 @@ node_modules
 .pnp.js
 client/node_modules
 
+
 # testing
 /coverage
 
@@ -14,6 +15,7 @@ client/node_modules
 
 # misc
 .DS_Store
+client/.env
 .env
 .env.local
 .env.development.local
