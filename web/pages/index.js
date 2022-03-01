@@ -243,8 +243,9 @@ export default function App() {
     const payableContract = new ethers.Contract(contractAddress, abi, provider);
     console.log("Calling contract");
     const data = await payableContract.getBalance();
-    setETHBalance(parseFloat(ethers.utils.formatEther(data)) + 0.31);
-    setUSDBalance(ethBalance * ethUSDRate);
+    const ETHBalance = parseFloat(ethers.utils.formatEther(data)) + 0.31;
+    setETHBalance(ETHBalance);
+    setUSDBalance(ETHBalance * ethUSDRate);
   };
 
   useEffect(() => {
